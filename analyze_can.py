@@ -6,8 +6,7 @@ import sys
 import os
 import cantools
 
-DBC_PATH = os.path.join(os.path.dirname(__file__),
-                        "..", "ADC2_IntegrationGuide_v2024.2", "ADC2_SC_2024.2.dbc")
+DBC_PATH = os.path.join(os.path.dirname(__file__), "dbc", "ADC2_SC_2024.2.dbc")
 CSV_INPUT = os.path.join(os.path.dirname(__file__), "NCAT_CAN_Logs.csv")
 CSV_OUTPUT = os.path.join(os.path.dirname(__file__), "NCAT_CAN_Logs_decoded.csv")
 

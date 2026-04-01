@@ -1,0 +1,126 @@
+VERSION ""
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+
+BS_:
+
+BU_: TestTool_HS ECM_HS BCM_HS 
+VAL_TABLE_ TrnsShftLvrLckStat 0 "Locked" 1 "Unlocked" ;
+VAL_TABLE_ CrsSpdLmtrSwStat 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Cancel" 5 "Cruise On/Off" 4 "SL/SW On/Off/GAP" 3 "Set" 2 "Resume" 1 "No Activation" 0 "Indeterminate" ;
+VAL_TABLE_ FOAI_VehAhdIndRq11E 0 "No Alert" 1 "Alert Level 1" 2 "Alert Level 2" 3 "Alert Level 3" ;
+VAL_TABLE_ FOAI_AlrtWrnIndRq11E 0 "No Alert" 1 "Alert Level 1" 2 "Alert Level 2" 3 "Alert Level 3" ;
+VAL_TABLE_ FOAI_AlrtChmIhbRq11E 0 "Allow Chime" 1 "Inhibit Chime" ;
+VAL_TABLE_ FwdClnAlrtOffIO11E 1 "true" 0 "false" ;
+VAL_TABLE_ FwdClnAlrtPr11E 1 "true" 0 "false" ;
+VAL_TABLE_ FCAHdwyStngIO 1 "true" 0 "false" ;
+VAL_TABLE_ FCAGpStng 0 "Off" 1 "Near" 2 "Medium" 3 "Reserved3" 4 "Reserved4" 5 "Reserved5" 6 "Reserved6" 7 "Far" ;
+VAL_TABLE_ SndLocRtRr 1 "true" 0 "false" ;
+VAL_TABLE_ SndLocLftRr 1 "true" 0 "false" ;
+VAL_TABLE_ SndLocPasFr 1 "true" 0 "false" ;
+VAL_TABLE_ SndLocDrFr 1 "true" 0 "false" ;
+VAL_TABLE_ SC_SndTne 10 "Beep (750 Hz) Radio Source Muted" 9 "High Frequency Broadband" 8 "Harp" 7 "Gong (2000 Hz)" 6 "Gong (750 Hz)" 5 "Beep (2000 Hz)" 4 "Beep (750 Hz)" 3 "Click-Clack" 2 "Click" 1 "Clack" 0 "Clock" 14 "No Chime with Radio Source Muted" 13 "Gong (2000 Hz) Radio Source Muted" 12 "Gong (750 Hz) Radio Source Muted" 11 "Beep (2000 Hz) Radio Source Muted" ;
+
+
+BO_ 2423619648 CruiseControl_LS: 3 Vector__XXX
+ SG_ TrnsShftLvrLckStat : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CrsSpdLmtrSwStat : 4|4@0+ (1,0) [0|9] "" Vector__XXX
+
+BO_ 2418262204 FCA_VisionBased_Info_2_LS: 4 Vector__XXX
+ SG_ FOAI_VehAhdIndRq11E : 27|4@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FOAI_AlrtWrnIndRq11E : 31|4@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FOAI_AlrtChmIhbRq11E : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FwdClnAlrtOffIO11E : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FwdClnAlrtPr11E : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FCAHdwyStngIO : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FCAGpStng : 2|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2420113504 Chime_Command_IPC_LS: 5 Vector__XXX
+ SG_ SndLocRtRr : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SndLocLftRr : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SndLocPasFr : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SndLocDrFr : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SC_SndDutCyc : 31|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ SC_NmofRp : 23|8@0+ (1,0) [0|255] "reps" Vector__XXX
+ SG_ SC_SndCdnPrd : 15|8@0+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ SC_SndTne : 3|4@0+ (1,0) [0|14] "" Vector__XXX
+ SG_ SndPriority : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_ SG_  "SignalLongName" STRING ;
+BA_DEF_DEF_  "SignalType" "";
+BA_DEF_DEF_  "SignalLongName" "";
+BA_ "SignalType" SG_ 2423619648 TrnsShftLvrLckStat "ENM";
+BA_ "SignalLongName" SG_ 2423619648 TrnsShftLvrLckStat "Transmission Shift Lever Lock Status";
+BA_ "SignalType" SG_ 2423619648 CrsSpdLmtrSwStat "ENM";
+BA_ "SignalLongName" SG_ 2423619648 CrsSpdLmtrSwStat "Cruise and Speed Limiter Switch Status";
+BA_ "SignalType" SG_ 2418262204 FOAI_VehAhdIndRq11E "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FOAI_VehAhdIndRq11E "Forward Object Alert Indications : Vehicle Ahead Indication Request";
+BA_ "SignalType" SG_ 2418262204 FOAI_AlrtWrnIndRq11E "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FOAI_AlrtWrnIndRq11E "Forward Object Alert Indications : Alert Warning Indication Request";
+BA_ "SignalType" SG_ 2418262204 FOAI_AlrtChmIhbRq11E "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FOAI_AlrtChmIhbRq11E "Forward Object Alert Indications : Alert Warning Chime Inhibit Request";
+BA_ "SignalType" SG_ 2418262204 FwdClnAlrtOffIO11E "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FwdClnAlrtOffIO11E "Forward Collision Alert Off Indication On";
+BA_ "SignalType" SG_ 2418262204 FwdClnAlrtPr11E "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FwdClnAlrtPr11E "Forward Collision Alert Present";
+BA_ "SignalType" SG_ 2418262204 FCAHdwyStngIO "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FCAHdwyStngIO "Forward Collision Alert Headway Setting Indication On";
+BA_ "SignalType" SG_ 2418262204 FCAGpStng "ENM";
+BA_ "SignalLongName" SG_ 2418262204 FCAGpStng "Forward Collision Alert Gap Setting";
+BA_ "SignalType" SG_ 2420113504 SndLocRtRr "ENM";
+BA_ "SignalLongName" SG_ 2420113504 SndLocRtRr "Sound Location : Right Rear";
+BA_ "SignalType" SG_ 2420113504 SndLocLftRr "ENM";
+BA_ "SignalLongName" SG_ 2420113504 SndLocLftRr "Sound Location : Left Rear";
+BA_ "SignalType" SG_ 2420113504 SndLocPasFr "ENM";
+BA_ "SignalLongName" SG_ 2420113504 SndLocPasFr "Sound Location : Passenger Front";
+BA_ "SignalType" SG_ 2420113504 SndLocDrFr "ENM";
+BA_ "SignalLongName" SG_ 2420113504 SndLocDrFr "Sound Location : Driver Front";
+BA_ "SignalLongName" SG_ 2420113504 SC_SndDutCyc "Sound Characteristics : Sound Duty Cycle";
+BA_ "SignalLongName" SG_ 2420113504 SC_NmofRp "Sound Characteristics : Number of Repetitions";
+BA_ "SignalLongName" SG_ 2420113504 SC_SndCdnPrd "Sound Characteristics : Sound Cadence Period";
+BA_ "SignalType" SG_ 2420113504 SC_SndTne "ENM";
+BA_ "SignalLongName" SG_ 2420113504 SC_SndTne "Sound Characteristics : Sound Tone";
+BA_ "SignalLongName" SG_ 2420113504 SndPriority "Sound Priority";
+VAL_ 2423619648 TrnsShftLvrLckStat 0 "Locked" 1 "Unlocked" ;
+VAL_ 2423619648 CrsSpdLmtrSwStat 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Cancel" 5 "Cruise On/Off" 4 "SL/SW On/Off/GAP" 3 "Set" 2 "Resume" 1 "No Activation" 0 "Indeterminate" ;
+VAL_ 2418262204 FOAI_VehAhdIndRq11E 0 "No Alert" 1 "Alert Level 1" 2 "Alert Level 2" 3 "Alert Level 3" ;
+VAL_ 2418262204 FOAI_AlrtWrnIndRq11E 0 "No Alert" 1 "Alert Level 1" 2 "Alert Level 2" 3 "Alert Level 3" ;
+VAL_ 2418262204 FOAI_AlrtChmIhbRq11E 0 "Allow Chime" 1 "Inhibit Chime" ;
+VAL_ 2418262204 FwdClnAlrtOffIO11E 1 "true" 0 "false" ;
+VAL_ 2418262204 FwdClnAlrtPr11E 1 "true" 0 "false" ;
+VAL_ 2418262204 FCAHdwyStngIO 1 "true" 0 "false" ;
+VAL_ 2418262204 FCAGpStng 0 "Off" 1 "Near" 2 "Medium" 3 "Reserved3" 4 "Reserved4" 5 "Reserved5" 6 "Reserved6" 7 "Far" ;
+VAL_ 2420113504 SndLocRtRr 1 "true" 0 "false" ;
+VAL_ 2420113504 SndLocLftRr 1 "true" 0 "false" ;
+VAL_ 2420113504 SndLocPasFr 1 "true" 0 "false" ;
+VAL_ 2420113504 SndLocDrFr 1 "true" 0 "false" ;
+VAL_ 2420113504 SC_SndTne 10 "Beep (750 Hz) Radio Source Muted" 9 "High Frequency Broadband" 8 "Harp" 7 "Gong (2000 Hz)" 6 "Gong (750 Hz)" 5 "Beep (2000 Hz)" 4 "Beep (750 Hz)" 3 "Click-Clack" 2 "Click" 1 "Clack" 0 "Clock" 14 "No Chime with Radio Source Muted" 13 "Gong (2000 Hz) Radio Source Muted" 12 "Gong (750 Hz) Radio Source Muted" 11 "Beep (2000 Hz) Radio Source Muted" ;
+

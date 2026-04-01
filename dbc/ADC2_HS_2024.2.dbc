@@ -1,0 +1,1356 @@
+VERSION ""
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+
+BS_:
+
+BU_: TestTool_HS ECM_HS BCM_HS 
+VAL_TABLE_ ElecPrkBrkSwStatV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ ElecPrkBrkSwStat 3 "Active" 2 "Apply" 1 "Release" 0 "NotActive" ;
+VAL_TABLE_ AllNodesVNA 1 "Activate Virtual Network" 0 "No Activation" ;
+VAL_TABLE_ StpOnBrkToRelPBIndOn 1 "true" 0 "false" ;
+VAL_TABLE_ EPBC_EPBrkAutBrkRq 1 "true" 0 "false" ;
+VAL_TABLE_ EPBSysDspMsgReq 7 "Message #7" 6 "Message #6" 5 "Message #5" 4 "Message #4" 3 "Message #3" 2 "Message #2" 1 "Message #1" 0 "Off" ;
+VAL_TABLE_ EPBSysAudWarnReq 2 "Warning #2" 1 "Warning #1" 0 "Off" ;
+VAL_TABLE_ ElecPrkBrkStat 2 "Fault" 1 "Applied" 0 "Released" ;
+VAL_TABLE_ EPBCrsCanRq 1 "true" 0 "false" ;
+VAL_TABLE_ EPBSysStatIndReq 3 "Flash Rate 2 Indication" 2 "Flash Rate 1 Indication" 1 "Continuous Indication" 0 "No Indication" ;
+VAL_TABLE_ EPBSysWrnIndReq 3 "Flash Rate #2 Indication" 2 "Flash Rate #1 Indication" 1 "Continuous Indication" 0 "No Indication" ;
+VAL_TABLE_ EPBSysBrkLtsReq 1 "true" 0 "false" ;
+VAL_TABLE_ RedntVSEAct 1 "true" 0 "false" ;
+VAL_TABLE_ HilRlbkCtrlActIO 1 "true" 0 "false" ;
+VAL_TABLE_ VehHldDrvrDsblActvFlg 1 "true" 0 "false" ;
+VAL_TABLE_ AutoBrkngAvlbl 1 "true" 0 "false" ;
+VAL_TABLE_ ABSAutnmsBrkReq 1 "true" 0 "false" ;
+VAL_TABLE_ HlStrAssActIO 1 "true" 0 "false" ;
+VAL_TABLE_ ABSActvProt 1 "true" 0 "false" ;
+VAL_TABLE_ BrkSysAutBrkFld 1 "true" 0 "false" ;
+VAL_TABLE_ IntBrkAssPreFilReq 1 "true" 0 "false" ;
+VAL_TABLE_ BrkSysMalFuncIndOn 1 "true" 0 "false" ;
+VAL_TABLE_ BPDAPS_BkPDrvApPV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ BrkFldLvlLwV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ AutoBrkngAct 1 "true" 0 "false" ;
+VAL_TABLE_ BrkFldLvlLw 1 "true" 0 "false" ;
+VAL_TABLE_ EngNTrnsRegStdyStTqV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ AccKdwnAtv 1 "true" 0 "false" ;
+VAL_TABLE_ EngActStdyStTorqV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ TrnsEngSpdReqFld 1 "true" 0 "false" ;
+VAL_TABLE_ PTACCAct 1 "true" 0 "false" ;
+VAL_TABLE_ CTSS_StbltyLvl 7 "Level 7" 6 "Level 6" 5 "Level 5" 4 "Level 4" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "Level 0" ;
+VAL_TABLE_ CTSS_StbltyTyp 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Torque Increase Pending" 2 "Torque Decrease Pending" 1 "Torque High Pulsation" 0 "Normal Stability" ;
+VAL_TABLE_ EngImmTrqTnsRqStat 0 "No Request" 7 "Unused and Reserved" 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" ;
+VAL_TABLE_ EngImmTrqTnsRqLmSt 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Value Limited High" 2 "Value Limited Low" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_TABLE_ EngPrdctTrqTnsRqStat 7 "Unused and Reserved" 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_TABLE_ EngPrdctTrqTnsRqLmS 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Value Limited High" 2 "Value Limited Low" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_TABLE_ WRSLNDWhlRotStRst 1 "true" 0 "false" ;
+VAL_TABLE_ WRSLNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WRSRNDWhlRotStRst 1 "true" 0 "false" ;
+VAL_TABLE_ WRSRNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WRSLDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WRSLDWhlRotStatRst 1 "true" 0 "false" ;
+VAL_TABLE_ WRSRDWhlRotStatRst 1 "true" 0 "false" ;
+VAL_TABLE_ WRSRDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EngCommFlrRedPwrCm 1 "true" 0 "false" ;
+VAL_TABLE_ CmndAxlTrqRespTyp 0 "Inactive" 1 "Pleasability Limit" 2 "Maximum Range" 3 "Automatic Actuator Selection" ;
+VAL_TABLE_ OPDFetrActRqt 2 "Request Unavailable" 1 "Requested On" 0 "Requested Off" ;
+VAL_TABLE_ TrnsAuxPmpAct 1 "true" 0 "false" ;
+VAL_TABLE_ PSBPI_PTSnBrkPdlPsV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ StrWhAngGrdV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ StrWhAngGrdMsk 0 "Don't Use Data" 1 "Use Data" ;
+VAL_TABLE_ StrWhAngMsk 0 "Don't Use Data" 1 "Use Data" ;
+VAL_TABLE_ StrWhlAngSenTyp 0 "Type 1" 1 "Type 2" 2 "Type 3" 3 "Type 4" ;
+VAL_TABLE_ StrWhlAngSenCalStat 2 "Calibrated" 1 "Estimated" 0 "Unknown" ;
+VAL_TABLE_ StrWhAngV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ PrkngLtsAct 1 "true" 0 "false" ;
+VAL_TABLE_ PrkLtRightOn 1 "true" 0 "false" ;
+VAL_TABLE_ PrkLtLeftOn 1 "true" 0 "false" ;
+VAL_TABLE_ HazSwAtv 1 "true" 0 "false" ;
+VAL_TABLE_ DRLAct 1 "true" 0 "false" ;
+VAL_TABLE_ Ky_IdDevPrgmAuthReq 1 "true" 0 "false" ;
+VAL_TABLE_ ClmnLckStatV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ ClmnLckStat 2 "Locked unsuccessful" 1 "Unlocked" 0 "Locked" 3 "Unlocked unsuccessful" ;
+VAL_TABLE_ AutoBmSlctAllwd 1 "true" 0 "false" ;
+VAL_TABLE_ BrkLtsAtv 1 "true" 0 "false" ;
+VAL_TABLE_ TrnSwAct 2 "Right" 1 "Left" 0 "No Activation" ;
+VAL_TABLE_ RrFogLmpsAct 1 "true" 0 "false" ;
+VAL_TABLE_ OtsdAmbtLtLvlStatV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ OtsdAmbtLtLvlStat 2 "Day" 1 "Night" 0 "Unknown" ;
+VAL_TABLE_ MainLghtSw 3 "HEADLAMP" 2 "PARKLAMP" 1 "OFF" 0 "AUTO" ;
+VAL_TABLE_ LowBmAct 1 "true" 0 "false" ;
+VAL_TABLE_ HighBmAct 1 "true" 0 "false" ;
+VAL_TABLE_ HdlmpBmSelectStat 2 "High Beams" 1 "Low Beams" 0 "Unknown" ;
+VAL_TABLE_ FlToPsSwAtv 1 "true" 0 "false" ;
+VAL_TABLE_ AdvFrntLghtSysEnbld 1 "true" 0 "false" ;
+VAL_TABLE_ FrFogLmpsAct 1 "true" 0 "false" ;
+VAL_TABLE_ AutLghtCtrl 1 "true" 0 "false" ;
+VAL_TABLE_ DrvIntndAxlTrqV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DrvIntndAxlTrqMinV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DrvIntndAxlTrqMaxV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ ActAxleTrqV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ ABAAPS_AccPosV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ ACCATCS_LmtgStat 3 "Request Rate Limited" 2 "Request Value Limited Maximum" 1 "Request Value Limited Minimum" 0 "Request Not Limited" ;
+VAL_TABLE_ ACCATCS_RqStat 4 "Request Suspended Till Driver Input" 3 "Request Denied" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_TABLE_ CPSATCS_ReqStatus 0 "No Request" 1 "Request Honored" 2 "Lost Arbitration" 3 "Serial Data Failure Temporary" 4 "Serial Data Failure Permanent" 5 "Control System Failure Temporary" 6 "Control System Failure Permanent" ;
+VAL_TABLE_ CPSATCS_LmtngStatus 0 "Request Not Limited" 1 "Request Value Limited to Minimum" 2 "Request Value Limited to Maximum" 3 "Request Rate Limited" ;
+VAL_TABLE_ RVBATCS_ReqStat 0 "No Request" 1 "Request Honored" 2 "Lost Arbitration" 3 "Serial Data Failure Temporary" 4 "Serial Data Failure Permanent" 5 "Control System Failure Temporary" 6 "Control System Failure Permanent" ;
+VAL_TABLE_ RVBATCS_LmtngStat 0 "Request Not Limited" 1 "Request Value Limited to Minimum" 2 "Request Value Limited to Maximum" 3 "Request Rate Limited" ;
+VAL_TABLE_ ACCATC_DrvAstdGoSt 3 "Auto Resume Pending" 2 "Apply Acc Pedal or Resume Sw To Go" 1 "Apply Accel Pedal to Go" 0 "Not Stopped" ;
+VAL_TABLE_ ACCATC_ACCTyp 3 "Full Speed Range ACC with LCC" 2 "Full Speed Range ACC with Booster" 1 "Full Speed Range ACC" 0 "Adaptive Cruise Control" ;
+VAL_TABLE_ CrsSecSwStat 15 "Unused and Reserved 5" 14 "Unused and Reserved 4" 13 "Unused and Reserved 3" 12 "Unused and Reserved 2" 11 "Unused and Reserved 1" 10 "Lane Centering Control" 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Speed Decrease High" 5 "Speed Increase High" 4 "Gap Up" 3 "Gap Down" 2 "Lane Keep Assist" 1 "No Activation" 0 "Indeterminate" ;
+VAL_TABLE_ DrvSelMdSw3Sta 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ DrvSelMdSw2Sta 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ DrvSelMdSw1Sta 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ CrsSpdLmtrSwStat 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Cancel" 5 "Cruise On/Off" 4 "SL/SW On/Off/GAP" 3 "Set" 2 "Resume" 1 "No Activation" 0 "Indeterminate" ;
+VAL_TABLE_ HillDscntCtrlSwStat 0 "No Activation" 1 "Increment" 2 "Decrement" 3 "Faulted" ;
+VAL_TABLE_ GlwPlgCrnkDelAct 1 "true" 0 "false" ;
+VAL_TABLE_ AuxHtrAlwd 1 "true" 0 "false" ;
+VAL_TABLE_ AppCltchAutSrtIO 1 "true" 0 "false" ;
+VAL_TABLE_ AccPosV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EngTrqRdFlrSt 4 "Torq Reduction Communication Failed" 3 "Torque Reduction Limited" 2 "Torque Reduction Permanently Failed" 1 "Torque Reduction Temporarily Failed" 0 "Torque Reduction OK" ;
+VAL_TABLE_ EngTrqDrRqdExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EngTrqActExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ CSTATRS_ReqStat 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_TABLE_ CSTATRS_LmtgStat 3 "Rate and Value Limited" 2 "Value Limited" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_TABLE_ EngManfldAbsPrsV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EngTrqMinExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EngTrqMaxExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ TrqAthdCrsCntrlDsgRsn 36 "SerialDataFault" 35 "Sequence" 34 "DrivenWhlSpdGreater" 33 "UndrivenWhlSpdGreater" 32 "HighIgnVoltage" 31 "AnalogCruzOOR" 30 "MPH_LimitedFuelEst" 29 "ManlNeutCruz" 28 "LowIgnVoltage" 27 "PedGreaterThanCruz" 26 "FirstGearDsbl" 25 "InjectorDsbld" 24 "Malf" 23 "EngSpd" 17 "RsmAccelSwTogether" 16 "PCM_Inhibit" 15 "OverSpeedTapDown" 14 "OverSpeed" 13 "SwOff" 12 "None" 11 "LowSpeed" 10 "IllegalCruzMode" 9 "HighSpeed" 8 "HighDecel" 7 "HighAccel" 6 "ETC" 5 "CoastInhibit" 4 "CoastDisengage" 3 "Clutch" 2 "Cancel" 1 "BrakeBeforeCruz" 0 "Brake" 74 "HybTorqSigTO" 73 "LCC_SerialDataFault" 72 "ACC_InvalidEngage" 71 "ACC_Off" 70 "ACC_Brake" 69 "ACC_Cancel" 68 "ACC_RedEngPwr" 67 "VSESFaulted" 66 "TCSFaulted" 65 "ABS" 64 "VSESOff" 63 "TCSOff" 62 "HybridCruiseDisengage" 61 "HillDescentSerDatInhb" 60 "HillDescentActive" 59 "AutoBrkSerialDataFlt" 58 "AutoBrkFailed" 57 "NotUsed" 56 "SLSW_SwitchOn" 55 "BrkPdlDrvrAplyPressDet" 54 "ManlGrChngWithoutClch" 53 "4WD_LowDisable" 52 "RateLimError" 51 "BrkAplySnsrHomeNotLrnd" 50 "ProcIntegFault" 49 "RunningReset" 48 "PTO" 47 "ACC_CmdSerialDataError" 46 "CntrlSysTypeError" 45 "ACC_AutoBrkFailed" 44 "ACC_Inhibited" 43 "ParkBrakeActive" 42 "BrakeApplyInvalid" 41 "BrakeSerDatError" 40 "TransGrDfltd" 39 "RearAxleLow" 38 "VehStabilityActive" 37 "MetalOvertempActive" 22 "EngRunTime" 21 "BadMemory" 20 "ALDL" 19 "UnderSchedule" 18 "TCS" ;
+VAL_TABLE_ HndsOffStrWhlDtStV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ HndsOffStrWhlDtSt 0 "Hands Off" 1 "Hands On" ;
+VAL_TABLE_ HndsOffStrWhlDtMd 0 "Disabled" 1 "Enabled" 2 "Failed" ;
+VAL_TABLE_ LKATrqOvrlTrqDStat 0 "Inactive" 1 "Active" 2 "Temporarily Limited" 3 "Permanently Failed" ;
+VAL_TABLE_ LKADrvAppldTrqV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ Eng12vStrtrMtrCmmdOn 1 "true" 0 "false" ;
+VAL_TABLE_ EngCntrlRunCrnkTrmSt 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ EngAirIntBstPrV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ SpdLmtrSpdWrngEnbld 1 "true" 0 "false" ;
+VAL_TABLE_ EngCylDactEvntPndg 1 "true" 0 "false" ;
+VAL_TABLE_ EngCylDeactMd 3 "Reactivation In Progress" 2 "Half of Total Cylinders Active" 1 "Deactivation In Progress" 0 "All Cylinders Active" ;
+VAL_TABLE_ RmVhStrtEngRng 1 "true" 0 "false" ;
+VAL_TABLE_ PFEngSpdCmndSpcd 1 "true" 0 "false" ;
+VAL_TABLE_ PltfrmEngSpdCmdInhtRq 1 "Inhibit Platform Eng. Speed Control" 0 "Allow Platform Engine Speed Control" ;
+VAL_TABLE_ PT_BrkPedDscrtInpStatV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ PT_BrkPedDscrtInpStat 1 "Brake Applied" 0 "Brake Not Applied" ;
+VAL_TABLE_ CrsCntEnbld 1 "true" 0 "false" ;
+VAL_TABLE_ CrsCntAtv 1 "true" 0 "false" ;
+VAL_TABLE_ DrvThrottlOvrrdDet 1 "true" 0 "false" ;
+VAL_TABLE_ PT_CrnkAct 1 "true" 0 "false" ;
+VAL_TABLE_ PTRunAbrt 1 "true" 0 "false" ;
+VAL_TABLE_ PTO_PT_RunAbrtd 1 "true" 0 "false" ;
+VAL_TABLE_ PTCrnkAbrted 1 "true" 0 "false" ;
+VAL_TABLE_ EngSpdStat 3 "Invalid" 1 "Degraded Operation" 0 "Normal Operation" ;
+VAL_TABLE_ EngRunAtv 1 "true" 0 "false" ;
+VAL_TABLE_ EngIdlAtv 1 "true" 0 "false" ;
+VAL_TABLE_ AccActPosV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DistRollCntAvgDrvnSrc 1 "Wheel Speed" 0 "Transmission Output Speed" ;
+VAL_TABLE_ VehSpdAvgDrvnSrc 1 "Wheel Speed" 0 "Transmission Output Speed" ;
+VAL_TABLE_ DstRolCntAvgNonDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DstRolCntAvNDrRstOc 1 "true" 0 "false" ;
+VAL_TABLE_ DistRollCntAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DstRolCntAvgDrnRstOc 1 "true" 0 "false" ;
+VAL_TABLE_ VehSpdAvgNDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ VehSpdAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DrvrDrAjrSwVDA 1 "Virtual Device Available" 0 "Virtual Device Unavailable" ;
+VAL_TABLE_ ValetMdAct 1 "true" 0 "false" ;
+VAL_TABLE_ TCSysDisSwAtv_12A 1 "true" 0 "false" ;
+VAL_TABLE_ ChmAct 1 "true" 0 "false" ;
+VAL_TABLE_ Ky_IdDevPr 1 "true" 0 "false" ;
+VAL_TABLE_ CrshAlrtDrvrSlctdType 0 "Chime" 1 "Seat" ;
+VAL_TABLE_ DrSbltAtcV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ DrSbltAtc 1 "true" 0 "false" ;
+VAL_TABLE_ PsSbltAtcV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ PsSbltAtc 1 "true" 0 "false" ;
+VAL_TABLE_ DDAjrSwAtvM 0 "Don't Use Data" 1 "Use Data" ;
+VAL_TABLE_ DDAjrSwAtv 1 "true" 0 "false" ;
+VAL_TABLE_ PDAjrSwAtv 1 "true" 0 "false" ;
+VAL_TABLE_ RLDoorAjarSwAct 1 "true" 0 "false" ;
+VAL_TABLE_ RRDoorAjarSwAct 1 "true" 0 "false" ;
+VAL_TABLE_ ChmMstrVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_TABLE_ IPCVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_TABLE_ HeadUpDispVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_TABLE_ HapticSeatVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_TABLE_ DrId 7 "Unknown" 6 "Driver #7" 5 "Driver #6" 4 "Driver #5" 3 "Driver #4" 2 "Driver #3" 1 "Driver #2" 0 "Driver #1" ;
+VAL_TABLE_ HUDActv 1 "true" 0 "false" ;
+VAL_TABLE_ BatVltV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ NotEventStat 2 "Pretensioner Deployment Event" 1 "Near Deployment Event" 0 "No Event" 3 "Airbag Deployment Event" ;
+VAL_TABLE_ BrkAppSnsrHmPosLrnd 1 "true" 0 "false" ;
+VAL_TABLE_ BrkPedTrvlAchvd 1 "true" 0 "false" ;
+VAL_TABLE_ BrkPedTrvlAchvdV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ BrkPdlModTrvlV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ BrkPdlModTrvl 1 "true" 0 "false" ;
+VAL_TABLE_ ElecPwrStrAngRtLmtCalSet 3 "Safety Command" 2 "Cal Set 3" 1 "Cal Set 2" 0 "Cal Set 1" ;
+VAL_TABLE_ ElcPwrStrAngAuthStat 7 "Unknown" 5 "Ramp Down" 4 "Limited Active" 3 "Permanently Failed" 2 "Active" 1 "Available for Control" 0 "Temp Inhibit" ;
+VAL_TABLE_ WhlRotDrctnlStLftDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_TABLE_ WhlRotDrctnlStRtDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_TABLE_ WhlGrndVlctyRtDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WhlGrndVlctyLftDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WhlRotDrctnlSRtNDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_TABLE_ WhlRotDrctnlStLfNDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_TABLE_ WhlGrndVlctyRtNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ WhlGrndVlctyLftNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ EnhDrvMdSwChUseRq 1 "true" 0 "false" ;
+VAL_TABLE_ IMUDataMsk 1 "true" 0 "false" ;
+VAL_TABLE_ DrvIndpntBrkAppAct 1 "true" 0 "false" ;
+VAL_TABLE_ WhlSlpSt 3 "Slip Detection Fault" 2 "Positive Slip Detected" 1 "Negative Slip Detected" 0 "No Slip Detected" ;
+VAL_TABLE_ BSTGRReqdGear 10 "Tenth Gear" 9 "Ninth Gear" 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Action" ;
+VAL_TABLE_ BSTGRReqType 3 "Hold Gear" 2 "Min Gear Request" 1 "Max Gear Request" 0 "No Action" ;
+VAL_TABLE_ VSEAct 1 "true" 0 "false" ;
+VAL_TABLE_ VhDynCntlSysSt 7 "Driver Disabled" 6 "Enhanced Operation" 5 "Calibrating" 4 "Warming Up" 3 "Permanently Failed" 2 "Temporarily Inhibited" 1 "Reduced Function" 0 "Normal Operation" ;
+VAL_TABLE_ TrnsBrkSysCltchRelRqd 1 "true" 0 "false" ;
+VAL_TABLE_ TracCntrlSysDrIntnt 1 "Enabled" 0 "Disabled" ;
+VAL_TABLE_ VehDynOvrUndrStrV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ TCSysEnbld 1 "true" 0 "false" ;
+VAL_TABLE_ TCSysAtv 1 "true" 0 "false" ;
+VAL_TABLE_ BrkPdlDrvAppPrsDetcdV 1 "Invalid" 0 "Valid" ;
+VAL_TABLE_ BrkPdlDrvAppPrsDetcd 1 "true" 0 "false" ;
+VAL_TABLE_ ACCBrkngAct 1 "true" 0 "false" ;
+VAL_TABLE_ ABSFld 1 "true" 0 "false" ;
+VAL_TABLE_ ABSAtv 1 "true" 0 "false" ;
+
+
+BO_ 560 Electric_Park_Brake_HS: 8 Vector__XXX
+ SG_ ElecPrkBrkCmdProt : 52|13@0+ (1,0) [0|8191] "" Vector__XXX
+ SG_ ElecPrkBrkSwStatV : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ElecPrkBrkCmdARC : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElecPrkBrkSwStat : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AllNodesVNA : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StpOnBrkToRelPBIndOn : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPBC_EPBAccRq : 35|12@0- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ EPBC_EPBrkAutBrkRq : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPBSysDspMsgReq : 4|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EPBSysAudWarnReq : 11|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ ElecPrkBrkStat : 13|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ EPBCrsCanRq : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPBSysStatIndReq : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EPBSysWrnIndReq : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EPBSysBrkLtsReq : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 532 Brake_Pedal_Driver_Status_HS: 6 Vector__XXX
+ SG_ RedntVSEActARC : 38|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RedntVSEAct : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AutoBrkngActARC : 22|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HilRlbkCtrlActIO : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehHldDrvrDsblActvFlg : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABSAutnmsBrkReqPVal : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AutoBrkngAvlbl : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABSAutnmsBrkReqARC : 35|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABSAutnmsBrkReq : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABSActvProtPVal : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABSActvProtARC : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HlStrAssActIO : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABSActvProt : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkSysAutBrkFld : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IntBrkAssPreFilReq : 4|1@0+ (1,0) [0|1] "N/A" Vector__XXX
+ SG_ BrkSysMalFuncIndOn : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPdDrvAPrsStaPVal : 16|9@0+ (1,0) [0|511] "" Vector__XXX
+ SG_ BPDAPS_BkPDrvApPV : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BPDAPS_BkPDrvApP : 0|8@0+ (75,0) [0|19125] "kPa" Vector__XXX
+ SG_ BrkPdDrvAppPrsAlRC : 2|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrkFldLvlLwV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AutoBrkngAct : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkFldLvlLw : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 398 PTEI_Engine_Torque_Status: 8 Vector__XXX
+ SG_ EngNTrnsRegStdyStTqV : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngNTrnsRegStdyStTq : 35|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ EngActStdyStTorq : 31|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ AccKdwnAtv : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngActStdyStTorqV : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrnsEngSpdReqFld : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTACCAct : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CTSS_StbltyLvl : 18|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ CTSS_StbltyTyp : 21|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ CrksftNTrnsRegCmdTq : 51|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ EngImmTrqTnsRqStat : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EngImmTrqTnsRqLmSt : 13|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EngPrdctTrqTnsRqStat : 2|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EngPrdctTrqTnsRqLmS : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 197 PPEI_NonDrivn_Whl_Rotationl_Stat: 8 Vector__XXX
+ SG_ WRSLNDWhlDisTpRC : 7|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSLNDWhlRotStRst : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSLNDWhlDistVal : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSLNDWhlDistTstm : 23|16@0+ (1,0) [0|65535] "counts" Vector__XXX
+ SG_ WRSLNDWhlDistPCntr : 1|10@0+ (1,0) [0|1023] "counts" Vector__XXX
+ SG_ WRSLNDSeqNum : 5|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSRNDWhlDisTpRC : 39|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSRNDWhlRotStRst : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSRNDWhlDistVal : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSRNDWhlDistTstm : 55|16@0+ (1,0) [0|65535] "counts" Vector__XXX
+ SG_ WRSRNDWhlDistPCntr : 33|10@0+ (1,0) [0|1023] "counts" Vector__XXX
+ SG_ WRSRNDSeqNum : 37|2@0+ (1,0) [0|3] "counts" Vector__XXX
+
+BO_ 193 PPEI_Driven_Whl_Rotational_Stat: 8 Vector__XXX
+ SG_ WRSLDWhlDisTpRC : 7|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSLDSeqNum : 5|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSLDWhlDistVal : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSLDWhlRotStatRst : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSLDWhlDistTmstm : 23|16@0+ (1,0) [0|65535] "counts" Vector__XXX
+ SG_ WRSLDWhlDistPlsCntr : 1|10@0+ (1,0) [0|1023] "counts" Vector__XXX
+ SG_ WRSRDWhlDisTpRC : 39|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSRDSeqNum : 37|2@0+ (1,0) [0|3] "counts" Vector__XXX
+ SG_ WRSRDWhlRotStatRst : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSRDWhlDistVal : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WRSRDWhlDistTmstm : 55|16@0+ (1,0) [0|65535] "counts" Vector__XXX
+ SG_ WRSRDWhlDistPlsCntr : 33|10@0+ (1,0) [0|1023] "counts" Vector__XXX
+
+BO_ 170 PTEI_Axle_Torque_Command: 8 Vector__XXX
+ SG_ EngCommFlrRedPwrCm : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CmndAxlTrqARC : 34|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CmndAxlTrqRespTyp : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CmndAxlTrqImm : 6|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ AccPos : 63|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ CmndAxlTrqPredct : 22|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ CmndAxlTrqPredctProtVal : 46|15@0+ (1,0) [0|32767] "" Vector__XXX
+
+BO_ 190 PTEI_Brake_Apply_Status: 7 Vector__XXX
+ SG_ OPDFetrActRqtPVal : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OPDFetrActRqtARC : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OPDFetrActRqt : 55|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ EngSpdMaxCapRdcdRng : 26|10@0+ (8,0) [0|8184] "rpm" Vector__XXX
+ SG_ PTSnsdBrkPdlInfPVal : 32|9@0+ (1,0) [0|511] "" Vector__XXX
+ SG_ TrnsAuxPmpAct : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccPos : 23|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ PTSnsdBrkPdlInfARC : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PSBPI_PTSnBrkPdlPsV : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PSBPI_PTSnBrkPdlPs : 15|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+
+BO_ 485 PPEI_Steering_Wheel_Angle: 8 Vector__XXX
+ SG_ StrAngSnsChksm : 50|11@0+ (1,0) [0|2047] "" Vector__XXX
+ SG_ StrWhAngGrdV : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StrWhAngGrdMsk : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StrWhAngMsk : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StrWhlAngSenTyp : 4|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ StrWhlAngSenCalStat : 6|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ StrWhAngGrd : 27|12@0- (1,0) [-2048|2047] "deg/sec" Vector__XXX
+ SG_ StWhlAngAliveRollCnt : 30|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ StrWhAngV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StrWhAng : 15|16@0- (0.0625,0) [-2048|2047.9375] "deg" Vector__XXX
+
+BO_ 320 Exterior_Lighting_HS: 4 Vector__XXX
+ SG_ PrkngLtsAct : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrkLtRightOn : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrkLtLeftOn : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HazSwAtv : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DRLAct : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Ky_IdDevPrgmAuthReq : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ClmnLckStatV : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ClmnLckStat : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AutoBmSlctAllwd : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkLtsAtv : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TrnSwAct : 19|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ RrFogLmpsAct : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OtsdAmbtLtLvlStatV : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OtsdAmbtLtLvlStat : 17|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ MainLghtSw : 12|2@0+ (1,0) [0|3] "N/A" Vector__XXX
+ SG_ LowBmAct : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighBmAct : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HdlmpBmSelectStat : 10|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ FlToPsSwAtv : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AdvFrntLghtSysEnbld : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FrFogLmpsAct : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AutLghtCtrl : 4|1@0+ (1,0) [0|1] "N/A" Vector__XXX
+
+BO_ 453 PPEI_Driver_Intnd_Axle_Torq_Stat: 6 Vector__XXX
+ SG_ DrvIntndAxlTrqV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvIntndAxlTrqMinV : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvIntndAxlTrqMin : 22|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ DrvIntndAxlTrqMaxV : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvIntndAxlTrqMax : 38|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ DrvIntndAxlTrq : 6|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+
+BO_ 211 PPEI_Hybrid_General_Status_3_HS: 3 Vector__XXX
+ SG_ ActAxleTrqV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ActAxleTrq : 6|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+
+BO_ 452 PPEI_Torque_Request_Status: 8 Vector__XXX
+ SG_ FSpRgACCSwADdPVal : 50|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FSpRgACCSwADdARC : 6|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FSpRgACCSwADd : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AutBrkAccActPsStRC : 34|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AutBrkAccActPsStPVal : 48|9@0+ (1,0) [0|511] "" Vector__XXX
+ SG_ ABAAPS_AccPos : 47|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ ABAAPS_AccPosV : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACCATCS_LmtgStat : 12|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACCATCS_RqStat : 15|3@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ RdLdNomAxlTrq : 10|19@0+ (0.125,-22534) [-22534|43001.875] "Nm" Vector__XXX
+ SG_ AccPdlOvrrdAtvProtVal : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AccPdlOvrrdAtvARC : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AccPdlOvrrdAtv : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CPSATCS_ReqStatus : 37|3@0+ (1,0) [0|6] "" Vector__XXX
+ SG_ CPSATCS_LmtngStatus : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RVBATCS_ReqStat : 53|3@0+ (1,0) [0|6] "" Vector__XXX
+ SG_ RVBATCS_LmtngStat : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 715 PPEI_Adaptive_Cruise_Axl_Trq_Req: 8 Vector__XXX
+ SG_ ACCATC_SplREngInpR : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACCATC_DrvAstdGoSt : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACCATC_AxlTrqRq : 10|19@0+ (0.125,-22534) [-22534|43001.875] "Nm" Vector__XXX
+ SG_ ACCATC_ACCTyp : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACCATC_ACCAct : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACCAxlTrqCmdProt : 32|25@0+ (1,0) [0|33554431] "" Vector__XXX
+ SG_ ACCCmndAlvRlgCnt : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 481 PPEI_Cruise_Control_Sw_Status: 7 Vector__XXX
+ SG_ CrsSecSwStatPVal : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CrsSecSwStatARC : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CrsSecSwStat : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ DrvSelMdSw3Sta : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvSelMdSw2Sta : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvSelMdSwStaARC : 33|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DrvSelMdSw1Sta : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CrsSpdLmtrSwStatPVal : 55|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CrsSpdLmtrSwStatARC : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CrsSpdLmtrSwStat : 47|4@0+ (1,0) [0|9] "" Vector__XXX
+
+BO_ 451 PPEI_Engine_Torque_Status_2: 8 Vector__XXX
+ SG_ HillDscntCtrlSwStatPVal : 57|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HillDscntCtrlSwStatARC : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HillDscntCtrlSwStat : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ GlwPlgCrnkDelAct : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AuxHtrAlwd : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AppCltchAutSrtIO : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccPosV : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccPos : 55|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ FuelFltRmnLf : 39|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ EngTrqRdFlrSt : 7|3@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ EngTrqDrRqdExtRngV : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngTrqDrRqdExtRng : 19|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ EngTrqActExtRngV : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngTrqActExtRng : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ CrsCntrlRsmSet : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CrsCntrlSetSpdRtnd : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CrsCntrlSet : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TrqAthdCrsCntrlAtv : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 707 PPEI_Engine_Torque_Status_3: 8 Vector__XXX
+ SG_ CSTATRS_ReqStat : 58|3@0+ (1,0) [0|6] "" Vector__XXX
+ SG_ CSTATRS_LmtgStat : 60|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngManfldAbsPrsV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngManfldAbsPrs : 55|8@0+ (0.5,0) [0|127.5] "kPa" Vector__XXX
+ SG_ EngTrqMinExtRngV : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngTrqMinExtRng : 19|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ EngTrqMaxExtRngV : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngTrqMaxExtRng : 3|12@0+ (0.5,-848) [-848|1199.5] "Nm" Vector__XXX
+ SG_ TrqAthdCrsCntrlDsgRsn : 39|8@0+ (1,0) [0|74] "" Vector__XXX
+
+BO_ 388 LKA_Steering_Trq_Overlay_Stat_HS: 8 Vector__XXX
+ SG_ HndsOffStrWhlDtStV : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HndsOffStrWhlDtSt : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HndsOffStrWhlDtMd : 20|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ LKATrqOvrlStatChksm : 34|11@0+ (1,0) [0|2047] "" Vector__XXX
+ SG_ LKATrqOvrlDltTrqDlvd : 18|11@0- (0.01,0) [-10.24|10.23] "Nm" Vector__XXX
+ SG_ LKATrqOvrlDlvdRC : 38|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ LKAElPwrStTtlTqDlvd : 2|11@0- (0.01,0) [-10.24|10.23] "Nm" Vector__XXX
+ SG_ LKATrqOvrlTrqDStat : 5|3@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LKADrvAppldTrqV : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LKADrvAppldTrq : 50|11@0- (0.01,0) [-10.24|10.23] "Nm" Vector__XXX
+
+BO_ 201 PPEI_Engine_General_Status_1: 8 Vector__XXX
+ SG_ Eng12vStrtrMtrCmmdOn : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngCntrlRunCrnkTrmSt : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngAirIntBstPrV : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngAirIntBstPr : 63|8@0- (1,0) [-128|127] "kPaG" Vector__XXX
+ SG_ SpdLmtrSpdWrngEnbld : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngCylDactEvntPndg : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngCylDeactMd : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RmVhStrtEngRng : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PFEngSpdCmndSpcd : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrThrtlOvrrdDetProtVal : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DrThrtlOvrdDetAlvRlCnt : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PltfrmEngSpdCmdInhtRq : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_BrkPedDscrtInpStatV : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_BrkPedDscrtInpStat : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccActPos : 39|8@0+ (0.392157,0) [0|100.000035] "%" Vector__XXX
+ SG_ CrsCntEnbld : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CrsCntAtv : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrvThrottlOvrrdDet : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PT_CrnkAct : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTRunAbrt : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTO_PT_RunAbrtd : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PTCrnkAbrted : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngSpdStat : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngSpd : 15|16@0+ (0.25,0) [0|16383.75] "rpm" Vector__XXX
+ SG_ EngRunAtv : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngIdlAtv : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccActPosV : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1001 PPEI_Vehicle_Speed_and_Distance: 8 Vector__XXX
+ SG_ DistRollCntAvgDrvnSrc : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehSpdAvgDrvnSrc : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DstRolCntAvgNonDrvnV : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DstRolCntAvNDrRstOc : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DstRolCntAvgNonDrvn : 52|13@0+ (0.125,0) [0|1023.875] "m" Vector__XXX
+ SG_ DistRollCntAvgDrvnV : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DstRolCntAvgDrnRstOc : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DistRollCntAvgDrvn : 20|13@0+ (0.125,0) [0|1023.875] "m" Vector__XXX
+ SG_ VehSpdAvgNDrvnV : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehSpdAvgNDrvn : 38|15@0+ (0.015625,0) [0|511.984375] "km / h" Vector__XXX
+ SG_ VehSpdAvgDrvnV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehSpdAvgDrvn : 6|15@0+ (0.015625,0) [0|511.984375] "km / h" Vector__XXX
+
+BO_ 298 Body_Information_HS: 8 Vector__XXX
+ SG_ DrvrDrAjrSwVDA : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ValetMdAct : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TCSysDisSwAtvARC : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCSysDisSwAtv_12A : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ChmAct : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Ky_IdDevPr : 56|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CrshAlrtDrvrSlctdType : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrSbltAtcV : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrSbltAtc : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PsSbltAtcV : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PsSbltAtc : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DDAjrSwAtvM : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DDAjrSwAtv : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDAjrSwAtv : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RLDoorAjarSwAct : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RRDoorAjarSwAct : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ChmMstrVDA : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IPCVDA : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HeadUpDispVDA : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HapticSeatVDA : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrId : 15|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ HUDActv : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BatVltV : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BatVlt : 31|8@0+ (0.1,3) [3|28.5] "volts" Vector__XXX
+
+BO_ 241 PPEI_Brake_Apply_Status: 6 Vector__XXX
+ SG_ NotEventStat : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrkPdlChkData : 24|17@0+ (1,0) [0|131071] "" Vector__XXX
+ SG_ BrkAppSnsrHmPosLrnd : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPedTrvlAchvd : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPedTrvlAchvdV : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPdlPosGrad : 23|8@0- (40,0) [-5120|5080] "%/s" Vector__XXX
+ SG_ BrkPdlPos : 15|8@0+ (0.392157,0) [0|100.000035] "% full" Vector__XXX
+ SG_ BrkPedPosAlvRolngCnt : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrkPdlModTrvlV : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPdlModTrvl : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPdlInTrvPrt : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 387 Str_Ang_Ctrl_Auth_Stat_HS: 3 Vector__XXX
+ SG_ ElecPwrStrAngRtLmtCalSet : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElcPwrStrAngAuthStatPVal : 21|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ElcPwrStrAngAuthStatARC : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElcPwrStrAngAuthStat : 18|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 840 Driven_Wheel_Grnd_Velocity_HS: 5 Vector__XXX
+ SG_ WhlRotDrctnlStLftDrvn : 37|3@0+ (1,0) [0|7] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,EOCM_F_HS,HMIM_HS,EPS_HS
+ SG_ WhlRotDrctnlStRtDrvn : 34|3@0+ (1,0) [0|7] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,EOCM_F_HS,HMIM_HS,EPS_HS
+ SG_ WhlGrndVlctyRtDrvnV : 22|1@0+ (1,0) [0|1] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,EPB_HS,BCM_HS,RDCM_HS,ACC_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyRtDrvn : 21|14@0+ (0.03125,0) [0|511.96875] "km / h" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,BCM_HS,RDCM_HS,ACC_HS,EPB_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyLftDrvnV : 6|1@0+ (1,0) [0|1] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,EPB_HS,BCM_HS,RDCM_HS,ACC_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyLftDrvn : 5|14@0+ (0.03125,0) [0|511.96875] "km / h" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,EOCM2A_K1_HS,CGM_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,BCM_HS,RDCM_HS,ACC_HS,EPB_HS,VES_HS,EPS_HS,SADS_HS
+
+BO_ 842 NonDriven_Wheel_Grnd_Velocity_HS: 5 Vector__XXX
+ SG_ WhlRotDrctnlSRtNDrvn : 34|3@0+ (1,0) [0|7] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,EOCM_F_HS,HMIM_HS,EPS_HS
+ SG_ WhlRotDrctnlStLfNDrvn : 37|3@0+ (1,0) [0|7] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,EOCM_F_HS,HMIM_HS,EPS_HS
+ SG_ WhlGrndVlctyRtNnDrvnV : 22|1@0+ (1,0) [0|1] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,EPB_HS,RDCM_HS,ACC_HS,BCM_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyRtNnDrvn : 21|14@0+ (0.03125,0) [0|511.96875] "km / h" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,RDCM_HS,ACC_HS,BCM_HS,EPB_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyLftNnDrvnV : 6|1@0+ (1,0) [0|1] "" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,EPB_HS,BCM_HS,RDCM_HS,ACC_HS,VES_HS,EPS_HS,SADS_HS
+ SG_ WhlGrndVlctyLftNnDrvn : 5|14@0+ (0.03125,0) [0|511.96875] "km / h" LVMPC_HS,V2V_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EDI_HS,HMIM_HS,TCCM_HS,FCM_HS,APPS_HS,EOCM_F_HS,BCM_HS,RDCM_HS,ACC_HS,EPB_HS,VES_HS,EPS_HS,SADS_HS
+
+BO_ 489 PPEI_Chassis_General_Status_1: 8 Vector__XXX
+ SG_ EnhDrvMdSwChUseRq : 53|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,ECM_HS
+ SG_ IMUDataMsk : 25|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,TCP_HS,ONSTAR_HS
+ SG_ DrvIndpntBrkAppAct : 55|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,RDCM_HS,TCM_HS,ECM_HS
+ SG_ WhlSlpSt : 52|2@0+ (1,0) [0|3] "" EOCM2B_K2_HS,EOCM2A_K2_HS,VPM_HS,EOCM2B_K1_HS,HCP_HS,CGM_HS,HCP_T_HS,EOCM2A_K1_HS,ECM_HS,TCM_HS
+ SG_ BSTGRReqdGear : 19|4@0+ (1,0) [0|10] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,TCM_HS
+ SG_ BSTGRReqType : 21|2@0+ (1,0) [0|3] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,TCM_HS
+ SG_ VSEAct : 24|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,AHL_AFL_HS,V2V_HS,TCM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,ICCM_B_HS,ICCM_OBD_HS,ICCM_HS,EOCM_F_HS,VES_HS,BCM_HS,EPB_HS,RDCM_HS,EPS_HS,ACC_HS,LVMPC_HS,TCCM_HS,ECM_HS
+ SG_ VhDynCntlSysSt : 39|3@0+ (1,0) [0|7] "" EOCM2B_K2_HS,EOCM2A_K2_HS,CSM_HS,EOCM2B_K1_HS,CGM_HS,EOCM_F_HS,FCM_HS,EOCM2A_K1_HS,HMIM_HS,RDCM_HS,VES_HS,ECM_HS,EPB_HS,EPS_HS,ACC_HS,TCCM_HS
+ SG_ TrnsBrkSysCltchRelRqd : 5|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,TCCM_HS,TCM_HS
+ SG_ TracCntrlSysDrIntnt : 26|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EPS_HS,RDCM_HS,ECM_HS
+ SG_ VehDynOvrUndrStrV : 50|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EPS_HS,RDCM_HS,TCCM_HS
+ SG_ TCSysEnbld : 27|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,V2V_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EOCM_F_HS,ACC_HS,BCP_HS,VES_HS,EPS_HS,RDCM_HS,TCM_HS,ECM_HS
+ SG_ TCSysAtv : 28|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,V2V_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,LVMPC_HS,EDI_HS,PTO_HS,TCCM_HS,EOCM_F_HS,VES_HS,RDCM_HS,EPB_HS,EPS_HS,ACC_HS,BCM_HS,TCM_HS,ECM_HS
+ SG_ BrkPdlDrvAppPrsDetcdV : 7|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,FCM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EOCM_F_HS,ACC_HS,VES_HS,EPS_HS,RDCM_HS,TCM_HS,TCCM_HS,ECM_HS
+ SG_ BrkPdlDrvAppPrsDetcd : 6|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,FCM_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EOCM_F_HS,ACC_HS,VES_HS,EPS_HS,RDCM_HS,TCM_HS,TCCM_HS,ECM_HS
+ SG_ ACCBrkngAct : 31|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,V2V_HS,EOCM2B_K1_HS,CGM_HS,EOCM2A_K1_HS,EOCM_F_HS,ACC_HS,TCM_HS,ECM_HS
+ SG_ ABSFld : 29|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,EOCM2B_K1_HS,V2V_HS,CGM_HS,FCM_HS,EOCM2A_K1_HS,EOCM_F_HS,ACC_HS,ICCM_B_HS,ICCM_OBD_HS,ICCM_HS,VES_HS,EPS_HS,EPB_HS,TCM_HS,ECM_HS
+ SG_ ABSAtv : 30|1@0+ (1,0) [0|1] "" EOCM2B_K2_HS,EOCM2A_K2_HS,AHL_AFL_HS,EOCM2B_K1_HS,V2V_HS,CGM_HS,EOCM2A_K1_HS,LVMPC_HS,EDI_HS,ICCM_B_HS,ICCM_OBD_HS,ICCM_HS,EOCM_F_HS,APPS_HS,SADS_HS,VES_HS,RDCM_HS,EPB_HS,EPS_HS,ACC_HS,BCM_HS,TCM_HS,TCCM_HS,ECM_HS
+
+BO_ 577 USDT_Req_to_BCM_HS: 8 TestTool_HS
+
+BO_ 1601 USDT_Resp_From_BCM_HS: 8 BCM_HS
+
+BO_ 2024 USDT_Resp_From_ECM_HS: 8 ECM_HS
+
+BO_ 2016 USDT_Req_to_ECM_HS: 8 TestTool_HS
+
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_ SG_  "SignalLongName" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepetition","cyclicIfActiveAndSpontanWD";
+BA_DEF_DEF_  "SignalType" "";
+BA_DEF_DEF_  "SignalLongName" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclicX";
+BA_ "GenMsgCycleTime" BO_ 560 50;
+BA_ "GenMsgCycleTime" BO_ 532 50;
+BA_ "GenMsgCycleTime" BO_ 398 12;
+BA_ "GenMsgCycleTime" BO_ 197 10;
+BA_ "GenMsgCycleTime" BO_ 193 10;
+BA_ "GenMsgCycleTime" BO_ 170 12;
+BA_ "GenMsgCycleTime" BO_ 190 12;
+BA_ "GenMsgCycleTime" BO_ 485 10;
+BA_ "GenMsgCycleTime" BO_ 320 1000;
+BA_ "GenMsgCycleTime" BO_ 453 25;
+BA_ "GenMsgCycleTime" BO_ 211 12;
+BA_ "GenMsgCycleTime" BO_ 452 25;
+BA_ "GenMsgCycleTime" BO_ 715 40;
+BA_ "GenMsgCycleTime" BO_ 481 30;
+BA_ "GenMsgCycleTime" BO_ 451 25;
+BA_ "GenMsgCycleTime" BO_ 707 50;
+BA_ "GenMsgCycleTime" BO_ 388 100;
+BA_ "GenMsgCycleTime" BO_ 201 12;
+BA_ "GenMsgCycleTime" BO_ 1001 100;
+BA_ "GenMsgCycleTime" BO_ 298 100;
+BA_ "GenMsgCycleTime" BO_ 241 10;
+BA_ "GenMsgCycleTime" BO_ 387 10;
+BA_ "GenMsgCycleTime" BO_ 840 50;
+BA_ "GenMsgCycleTime" BO_ 842 50;
+BA_ "GenMsgCycleTime" BO_ 489 20;
+BA_ "SignalLongName" SG_ 560 ElecPrkBrkCmdProt "Electric Park Brake Command Protection";
+BA_ "SignalType" SG_ 560 ElecPrkBrkSwStatV "ENM";
+BA_ "SignalLongName" SG_ 560 ElecPrkBrkSwStatV "Electric Park Brake Switch Status Validity";
+BA_ "SignalLongName" SG_ 560 ElecPrkBrkCmdARC "Electric Park Brake Command Alive Rolling Count";
+BA_ "SignalType" SG_ 560 ElecPrkBrkSwStat "ENM";
+BA_ "SignalLongName" SG_ 560 ElecPrkBrkSwStat "Electric Park Brake Switch Status";
+BA_ "SignalType" SG_ 560 AllNodesVNA "ENM";
+BA_ "SignalLongName" SG_ 560 AllNodesVNA "All Nodes Virtual Network Activation";
+BA_ "SignalType" SG_ 560 StpOnBrkToRelPBIndOn "ENM";
+BA_ "SignalLongName" SG_ 560 StpOnBrkToRelPBIndOn "Step On Brake To Release Park Brake Indication On";
+BA_ "SignalLongName" SG_ 560 EPBC_EPBAccRq "Electric Park Brake Command : Electric Park Brake Acceleration Requested";
+BA_ "SignalType" SG_ 560 EPBC_EPBrkAutBrkRq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBC_EPBrkAutBrkRq "Electric Park Brake Command : Electric Park Brake Automatic Braking Requested";
+BA_ "SignalType" SG_ 560 EPBSysDspMsgReq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBSysDspMsgReq "Electric Park Brake System Display Message Request";
+BA_ "SignalType" SG_ 560 EPBSysAudWarnReq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBSysAudWarnReq "Electric Park Brake System Audible Warning Request";
+BA_ "SignalType" SG_ 560 ElecPrkBrkStat "ENM";
+BA_ "SignalLongName" SG_ 560 ElecPrkBrkStat "Electric Park Brake Status";
+BA_ "SignalType" SG_ 560 EPBCrsCanRq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBCrsCanRq "Electric Park Brake Cruise Control Cancel Requested";
+BA_ "SignalType" SG_ 560 EPBSysStatIndReq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBSysStatIndReq "Electric Park Brake System Status Indication Request";
+BA_ "SignalType" SG_ 560 EPBSysWrnIndReq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBSysWrnIndReq "Electric Park Brake System Warning Indication Request";
+BA_ "SignalType" SG_ 560 EPBSysBrkLtsReq "ENM";
+BA_ "SignalLongName" SG_ 560 EPBSysBrkLtsReq "Electric Park Brake System Brake Lights Requested";
+BA_ "SignalLongName" SG_ 532 RedntVSEActARC "Redundant Vehicle Stability Enhancement System Active Alive Rolling Count";
+BA_ "SignalType" SG_ 532 RedntVSEAct "ENM";
+BA_ "SignalLongName" SG_ 532 RedntVSEAct "Redundant Vehicle Stability Enhancement System Active";
+BA_ "SignalLongName" SG_ 532 AutoBrkngActARC "Automatic Braking Active Alive Rolling Count";
+BA_ "SignalType" SG_ 532 HilRlbkCtrlActIO "ENM";
+BA_ "SignalLongName" SG_ 532 HilRlbkCtrlActIO "Hill Rollback Control Active Indiction On";
+BA_ "SignalType" SG_ 532 VehHldDrvrDsblActvFlg "ENM";
+BA_ "SignalLongName" SG_ 532 VehHldDrvrDsblActvFlg "Vehicle Hold Driver Disable Active Flag";
+BA_ "SignalLongName" SG_ 532 ABSAutnmsBrkReqPVal "Antilock Brake System Autonomous Braking Request Protection Value";
+BA_ "SignalType" SG_ 532 AutoBrkngAvlbl "ENM";
+BA_ "SignalLongName" SG_ 532 AutoBrkngAvlbl "Automatic Braking Available";
+BA_ "SignalLongName" SG_ 532 ABSAutnmsBrkReqARC "Antilock Brake System Autonomous Braking Request Alive Rolling Count";
+BA_ "SignalType" SG_ 532 ABSAutnmsBrkReq "ENM";
+BA_ "SignalLongName" SG_ 532 ABSAutnmsBrkReq "Antilock Brake System Autonomous Braking Request";
+BA_ "SignalLongName" SG_ 532 ABSActvProtPVal "Antilock Brake System Active Protected Protection Value";
+BA_ "SignalLongName" SG_ 532 ABSActvProtARC "Antilock Brake System Active Protected Alive Rolling Count";
+BA_ "SignalType" SG_ 532 HlStrAssActIO "ENM";
+BA_ "SignalLongName" SG_ 532 HlStrAssActIO "Hill Start Assist Active Indication On";
+BA_ "SignalType" SG_ 532 ABSActvProt "ENM";
+BA_ "SignalLongName" SG_ 532 ABSActvProt "Antilock Brake System Active Protected";
+BA_ "SignalType" SG_ 532 BrkSysAutBrkFld "ENM";
+BA_ "SignalLongName" SG_ 532 BrkSysAutBrkFld "Brake System Automatic Braking Failed";
+BA_ "SignalType" SG_ 532 IntBrkAssPreFilReq "ENM";
+BA_ "SignalLongName" SG_ 532 IntBrkAssPreFilReq "Inteligent Brake Assist Pre-Fil Request";
+BA_ "SignalType" SG_ 532 BrkSysMalFuncIndOn "ENM";
+BA_ "SignalLongName" SG_ 532 BrkSysMalFuncIndOn "Brake System Malfunction Indication On";
+BA_ "SignalLongName" SG_ 532 BrkPdDrvAPrsStaPVal "Brake Pedal Driver Applied Pressure Status Protection Value";
+BA_ "SignalType" SG_ 532 BPDAPS_BkPDrvApPV "ENM";
+BA_ "SignalLongName" SG_ 532 BPDAPS_BkPDrvApPV "Brake Pedal Driver Applied Pressure Status : Brake Pedal Driver Applied Pressure Validity";
+BA_ "SignalLongName" SG_ 532 BPDAPS_BkPDrvApP "Brake Pedal Driver Applied Pressure Status : Brake Pedal Driver Applied Pressure";
+BA_ "SignalLongName" SG_ 532 BrkPdDrvAppPrsAlRC "Brake Pedal Driver Applied Pressure Alive Rolling Count";
+BA_ "SignalType" SG_ 532 BrkFldLvlLwV "ENM";
+BA_ "SignalLongName" SG_ 532 BrkFldLvlLwV "Brake Fluid Level Low Validity";
+BA_ "SignalType" SG_ 532 AutoBrkngAct "ENM";
+BA_ "SignalLongName" SG_ 532 AutoBrkngAct "Automatic Braking Active";
+BA_ "SignalType" SG_ 532 BrkFldLvlLw "ENM";
+BA_ "SignalLongName" SG_ 532 BrkFldLvlLw "Brake Fluid Level Low";
+BA_ "SignalType" SG_ 398 EngNTrnsRegStdyStTqV "ENM";
+BA_ "SignalLongName" SG_ 398 EngNTrnsRegStdyStTqV "Engine Non-Transmission Regulated Steady State Torque Validity";
+BA_ "SignalLongName" SG_ 398 EngNTrnsRegStdyStTq "Engine Non-Transmission Regulated Steady State Torque";
+BA_ "SignalLongName" SG_ 398 EngActStdyStTorq "Engine Actual Steady State Torque";
+BA_ "SignalType" SG_ 398 AccKdwnAtv "ENM";
+BA_ "SignalLongName" SG_ 398 AccKdwnAtv "Accelerator Kick Down Detected";
+BA_ "SignalType" SG_ 398 EngActStdyStTorqV "ENM";
+BA_ "SignalLongName" SG_ 398 EngActStdyStTorqV "Engine Actual Steady State Torque Validity";
+BA_ "SignalType" SG_ 398 TrnsEngSpdReqFld "ENM";
+BA_ "SignalLongName" SG_ 398 TrnsEngSpdReqFld "Transmission Engine Speed Request Failed";
+BA_ "SignalType" SG_ 398 PTACCAct "ENM";
+BA_ "SignalLongName" SG_ 398 PTACCAct "Powertrain Adaptive Cruise Control Active";
+BA_ "SignalType" SG_ 398 CTSS_StbltyLvl "ENM";
+BA_ "SignalLongName" SG_ 398 CTSS_StbltyLvl "Crankshaft Torque Stability Status : Stability Level";
+BA_ "SignalType" SG_ 398 CTSS_StbltyTyp "ENM";
+BA_ "SignalLongName" SG_ 398 CTSS_StbltyTyp "Crankshaft Torque Stability Status : Stability Type";
+BA_ "SignalLongName" SG_ 398 CrksftNTrnsRegCmdTq "Crankshaft Non-Transmission Regulated Commanded Torque";
+BA_ "SignalType" SG_ 398 EngImmTrqTnsRqStat "ENM";
+BA_ "SignalLongName" SG_ 398 EngImmTrqTnsRqStat "Engine Immediate Torque Transmission Request Status";
+BA_ "SignalType" SG_ 398 EngImmTrqTnsRqLmSt "ENM";
+BA_ "SignalLongName" SG_ 398 EngImmTrqTnsRqLmSt "Engine Immediate Torque Transmission Request Limiting Status";
+BA_ "SignalType" SG_ 398 EngPrdctTrqTnsRqStat "ENM";
+BA_ "SignalLongName" SG_ 398 EngPrdctTrqTnsRqStat "Engine Predicted Torque Transmission Request Status";
+BA_ "SignalType" SG_ 398 EngPrdctTrqTnsRqLmS "ENM";
+BA_ "SignalLongName" SG_ 398 EngPrdctTrqTnsRqLmS "Engine Predicted Torque Transmission Request Limiting Status";
+BA_ "SignalLongName" SG_ 197 WRSLNDWhlDisTpRC "Wheel Rotational Status Left Non Driven : Wheel Distance Timestamp Rollover Counter";
+BA_ "SignalType" SG_ 197 WRSLNDWhlRotStRst "ENM";
+BA_ "SignalLongName" SG_ 197 WRSLNDWhlRotStRst "Wheel Rotational Status Left Non Driven : Wheel Rotational Status Reset Occurred";
+BA_ "SignalType" SG_ 197 WRSLNDWhlDistVal "ENM";
+BA_ "SignalLongName" SG_ 197 WRSLNDWhlDistVal "Wheel Rotational Status Left Non Driven : Wheel Distance Validity";
+BA_ "SignalLongName" SG_ 197 WRSLNDWhlDistTstm "Wheel Rotational Status Left Non Driven : Wheel Distance Timestamp";
+BA_ "SignalLongName" SG_ 197 WRSLNDWhlDistPCntr "Wheel Rotational Status Left Non Driven : Wheel Distance Pulse Counter";
+BA_ "SignalLongName" SG_ 197 WRSLNDSeqNum "Wheel Rotational Status Left Non Driven : Sequence Number";
+BA_ "SignalLongName" SG_ 197 WRSRNDWhlDisTpRC "Wheel Rotational Status Right Non Driven : Wheel Distance Timestamp Rollover Counter";
+BA_ "SignalType" SG_ 197 WRSRNDWhlRotStRst "ENM";
+BA_ "SignalLongName" SG_ 197 WRSRNDWhlRotStRst "Wheel Rotational Status Right Non Driven : Wheel Rotational Status Reset Occurred";
+BA_ "SignalType" SG_ 197 WRSRNDWhlDistVal "ENM";
+BA_ "SignalLongName" SG_ 197 WRSRNDWhlDistVal "Wheel Rotational Status Right Non Driven : Wheel Distance Validity";
+BA_ "SignalLongName" SG_ 197 WRSRNDWhlDistTstm "Wheel Rotational Status Right Non Driven : Wheel Distance Timestamp";
+BA_ "SignalLongName" SG_ 197 WRSRNDWhlDistPCntr "Wheel Rotational Status Right Non Driven : Wheel Distance Pulse Counter";
+BA_ "SignalLongName" SG_ 197 WRSRNDSeqNum "Wheel Rotational Status Right Non Driven : Sequence Number";
+BA_ "SignalLongName" SG_ 193 WRSLDWhlDisTpRC "Wheel Rotational Status Left Driven : Wheel Distance Timestamp Rollover Counter";
+BA_ "SignalLongName" SG_ 193 WRSLDSeqNum "Wheel Rotational Status Left Driven : Sequence Number";
+BA_ "SignalType" SG_ 193 WRSLDWhlDistVal "ENM";
+BA_ "SignalLongName" SG_ 193 WRSLDWhlDistVal "Wheel Rotational Status Left Driven : Wheel Distance Validity";
+BA_ "SignalType" SG_ 193 WRSLDWhlRotStatRst "ENM";
+BA_ "SignalLongName" SG_ 193 WRSLDWhlRotStatRst "Wheel Rotational Status Left Driven : Wheel Rotational Status Reset Occurred";
+BA_ "SignalLongName" SG_ 193 WRSLDWhlDistTmstm "Wheel Rotational Status Left Driven : Wheel Distance Timestamp";
+BA_ "SignalLongName" SG_ 193 WRSLDWhlDistPlsCntr "Wheel Rotational Status Left Driven : Wheel Distance Pulse Counter";
+BA_ "SignalLongName" SG_ 193 WRSRDWhlDisTpRC "Wheel Rotational Status Right Driven : Wheel Distance Timestamp Rollover Counter";
+BA_ "SignalLongName" SG_ 193 WRSRDSeqNum "Wheel Rotational Status Right Driven : Sequence Number";
+BA_ "SignalType" SG_ 193 WRSRDWhlRotStatRst "ENM";
+BA_ "SignalLongName" SG_ 193 WRSRDWhlRotStatRst "Wheel Rotational Status Right Driven : Wheel Rotational Status Reset Occurred";
+BA_ "SignalType" SG_ 193 WRSRDWhlDistVal "ENM";
+BA_ "SignalLongName" SG_ 193 WRSRDWhlDistVal "Wheel Rotational Status Right Driven : Wheel Distance Validity";
+BA_ "SignalLongName" SG_ 193 WRSRDWhlDistTmstm "Wheel Rotational Status Right Driven : Wheel Distance Timestamp";
+BA_ "SignalLongName" SG_ 193 WRSRDWhlDistPlsCntr "Wheel Rotational Status Right Driven : Wheel Distance Pulse Counter";
+BA_ "SignalType" SG_ 170 EngCommFlrRedPwrCm "ENM";
+BA_ "SignalLongName" SG_ 170 EngCommFlrRedPwrCm "Engine Communication Failure Reduced Power Commanded";
+BA_ "SignalLongName" SG_ 170 CmndAxlTrqARC "Commanded Axle Torque Alive Rolling Count";
+BA_ "SignalType" SG_ 170 CmndAxlTrqRespTyp "ENM";
+BA_ "SignalLongName" SG_ 170 CmndAxlTrqRespTyp "Commanded Axle Torque Response Type";
+BA_ "SignalLongName" SG_ 170 CmndAxlTrqImm "Commanded Axle Torque Immediate";
+BA_ "SignalLongName" SG_ 170 AccPos "Accelerator Effective Position";
+BA_ "SignalLongName" SG_ 170 CmndAxlTrqPredct "Commanded Axle Torque Predicted";
+BA_ "SignalLongName" SG_ 170 CmndAxlTrqPredctProtVal "Commanded Axle Torque Predicted Protection Value";
+BA_ "SignalLongName" SG_ 190 OPDFetrActRqtPVal "One Pedal Driving Feature Activation Request Protection Value";
+BA_ "SignalLongName" SG_ 190 OPDFetrActRqtARC "One Pedal Driving Feature Activation Request Alive Rolling Count";
+BA_ "SignalType" SG_ 190 OPDFetrActRqt "ENM";
+BA_ "SignalLongName" SG_ 190 OPDFetrActRqt "One Pedal Driving Feature Activation Request";
+BA_ "SignalLongName" SG_ 190 EngSpdMaxCapRdcdRng "Engine Speed Maximum Capacity Reduced Range";
+BA_ "SignalLongName" SG_ 190 PTSnsdBrkPdlInfPVal "Powertrain Sensed Brake Pedal Information Protection Value";
+BA_ "SignalType" SG_ 190 TrnsAuxPmpAct "ENM";
+BA_ "SignalLongName" SG_ 190 TrnsAuxPmpAct "Transmission Auxiliary Pump Active";
+BA_ "SignalLongName" SG_ 190 AccPos "Accelerator Effective Position";
+BA_ "SignalLongName" SG_ 190 PTSnsdBrkPdlInfARC "Powertrain Sensed Brake Pedal Information Alive Rolling Count";
+BA_ "SignalType" SG_ 190 PSBPI_PTSnBrkPdlPsV "ENM";
+BA_ "SignalLongName" SG_ 190 PSBPI_PTSnBrkPdlPsV "Powertrain Sensed Brake Pedal Information : Powertrain Sensed Brake Pedal Position Validity";
+BA_ "SignalLongName" SG_ 190 PSBPI_PTSnBrkPdlPs "Powertrain Sensed Brake Pedal Information : Powertrain Sensed Brake Pedal Position";
+BA_ "SignalLongName" SG_ 485 StrAngSnsChksm "Steering Angle Sensor Checksum";
+BA_ "SignalType" SG_ 485 StrWhAngGrdV "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhAngGrdV "Steering Wheel Angle Gradient Validity";
+BA_ "SignalType" SG_ 485 StrWhAngGrdMsk "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhAngGrdMsk "Steering Wheel Angle Gradient Mask";
+BA_ "SignalType" SG_ 485 StrWhAngMsk "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhAngMsk "Steering Wheel Angle Mask";
+BA_ "SignalType" SG_ 485 StrWhlAngSenTyp "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhlAngSenTyp "Steering Wheel Angle Sensor Type";
+BA_ "SignalType" SG_ 485 StrWhlAngSenCalStat "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhlAngSenCalStat "Steering Wheel Angle Sensor Calibration Status";
+BA_ "SignalLongName" SG_ 485 StrWhAngGrd "Steering Wheel Angle Gradient";
+BA_ "SignalLongName" SG_ 485 StWhlAngAliveRollCnt "Steering Wheel Angle Alive Rolling Count";
+BA_ "SignalType" SG_ 485 StrWhAngV "ENM";
+BA_ "SignalLongName" SG_ 485 StrWhAngV "Steering Wheel Angle Validity";
+BA_ "SignalLongName" SG_ 485 StrWhAng "Steering Wheel Angle";
+BA_ "SignalType" SG_ 320 PrkngLtsAct "ENM";
+BA_ "SignalLongName" SG_ 320 PrkngLtsAct "Parking Lights Active";
+BA_ "SignalType" SG_ 320 PrkLtRightOn "ENM";
+BA_ "SignalLongName" SG_ 320 PrkLtRightOn "Park Light Right On";
+BA_ "SignalType" SG_ 320 PrkLtLeftOn "ENM";
+BA_ "SignalLongName" SG_ 320 PrkLtLeftOn "Park Light Left On";
+BA_ "SignalType" SG_ 320 HazSwAtv "ENM";
+BA_ "SignalLongName" SG_ 320 HazSwAtv "Hazard Switch Active";
+BA_ "SignalType" SG_ 320 DRLAct "ENM";
+BA_ "SignalLongName" SG_ 320 DRLAct "Daytime Running Lamps Active";
+BA_ "SignalType" SG_ 320 Ky_IdDevPrgmAuthReq "ENM";
+BA_ "SignalLongName" SG_ 320 Ky_IdDevPrgmAuthReq "Key / Identification Device Programming Authentication Requested";
+BA_ "SignalType" SG_ 320 ClmnLckStatV "ENM";
+BA_ "SignalLongName" SG_ 320 ClmnLckStatV "Column Lock Status Validity";
+BA_ "SignalType" SG_ 320 ClmnLckStat "ENM";
+BA_ "SignalLongName" SG_ 320 ClmnLckStat "Column Lock Status";
+BA_ "SignalType" SG_ 320 AutoBmSlctAllwd "ENM";
+BA_ "SignalLongName" SG_ 320 AutoBmSlctAllwd "Automatic Beam Select Allowed";
+BA_ "SignalType" SG_ 320 BrkLtsAtv "ENM";
+BA_ "SignalLongName" SG_ 320 BrkLtsAtv "Brake Lights Active";
+BA_ "SignalType" SG_ 320 TrnSwAct "ENM";
+BA_ "SignalLongName" SG_ 320 TrnSwAct "Turn Switch Activation";
+BA_ "SignalType" SG_ 320 RrFogLmpsAct "ENM";
+BA_ "SignalLongName" SG_ 320 RrFogLmpsAct "Rear Fog Lamps Active";
+BA_ "SignalType" SG_ 320 OtsdAmbtLtLvlStatV "ENM";
+BA_ "SignalLongName" SG_ 320 OtsdAmbtLtLvlStatV "Outside Ambient Light Level Status Validity";
+BA_ "SignalType" SG_ 320 OtsdAmbtLtLvlStat "ENM";
+BA_ "SignalLongName" SG_ 320 OtsdAmbtLtLvlStat "Outside Ambient Light Level Status";
+BA_ "SignalType" SG_ 320 MainLghtSw "ENM";
+BA_ "SignalLongName" SG_ 320 MainLghtSw "Main Light Switch";
+BA_ "SignalType" SG_ 320 LowBmAct "ENM";
+BA_ "SignalLongName" SG_ 320 LowBmAct "Low Beam Active";
+BA_ "SignalType" SG_ 320 HighBmAct "ENM";
+BA_ "SignalLongName" SG_ 320 HighBmAct "High Beam Active";
+BA_ "SignalType" SG_ 320 HdlmpBmSelectStat "ENM";
+BA_ "SignalLongName" SG_ 320 HdlmpBmSelectStat "Headlamp Beam Select Status";
+BA_ "SignalType" SG_ 320 FlToPsSwAtv "ENM";
+BA_ "SignalLongName" SG_ 320 FlToPsSwAtv "Flash To Pass Switch Active";
+BA_ "SignalType" SG_ 320 AdvFrntLghtSysEnbld "ENM";
+BA_ "SignalLongName" SG_ 320 AdvFrntLghtSysEnbld "Advanced Front Lighting System Enabled";
+BA_ "SignalType" SG_ 320 FrFogLmpsAct "ENM";
+BA_ "SignalLongName" SG_ 320 FrFogLmpsAct "Front Fog Lamps Active";
+BA_ "SignalType" SG_ 320 AutLghtCtrl "ENM";
+BA_ "SignalLongName" SG_ 320 AutLghtCtrl "Auto Light Control";
+BA_ "SignalType" SG_ 453 DrvIntndAxlTrqV "ENM";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrqV "Driver Intended Axle Torque Validity";
+BA_ "SignalType" SG_ 453 DrvIntndAxlTrqMinV "ENM";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrqMinV "Driver Intended Axle Torque Minimum Validity";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrqMin "Driver Intended Axle Torque Minimum";
+BA_ "SignalType" SG_ 453 DrvIntndAxlTrqMaxV "ENM";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrqMaxV "Driver Intended Axle Torque Maximum Validity";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrqMax "Driver Intended Axle Torque Maximum";
+BA_ "SignalLongName" SG_ 453 DrvIntndAxlTrq "Driver Intended Axle Torque";
+BA_ "SignalType" SG_ 211 ActAxleTrqV "ENM";
+BA_ "SignalLongName" SG_ 211 ActAxleTrqV "Actual Axle Torque Validity";
+BA_ "SignalLongName" SG_ 211 ActAxleTrq "Actual Axle Torque";
+BA_ "SignalLongName" SG_ 452 FSpRgACCSwADdPVal "Full Speed Range ACC Cruise Switch Action Detected Protection Value";
+BA_ "SignalLongName" SG_ 452 FSpRgACCSwADdARC "Full Speed Range ACC Cruise Switch Action Detected Alive Rolling Count";
+BA_ "SignalLongName" SG_ 452 FSpRgACCSwADd "Full Speed Range ACC Cruise Switch Action Detected";
+BA_ "SignalLongName" SG_ 452 AutBrkAccActPsStRC "Autonomous Braking Accelerator Actual Position Status Rolling Count";
+BA_ "SignalLongName" SG_ 452 AutBrkAccActPsStPVal "Autonomous Braking Accelerator Actual Position Status Protection Value";
+BA_ "SignalLongName" SG_ 452 ABAAPS_AccPos "Autonomous Braking Accelerator Actual Position Status : Accelerator Position";
+BA_ "SignalType" SG_ 452 ABAAPS_AccPosV "ENM";
+BA_ "SignalLongName" SG_ 452 ABAAPS_AccPosV "Autonomous Braking Accelerator Actual Position Status : Accelerator Position Validity";
+BA_ "SignalType" SG_ 452 ACCATCS_LmtgStat "ENM";
+BA_ "SignalLongName" SG_ 452 ACCATCS_LmtgStat "Adaptive Cruise Control Axle Torque Command Status : Limiting Status";
+BA_ "SignalType" SG_ 452 ACCATCS_RqStat "ENM";
+BA_ "SignalLongName" SG_ 452 ACCATCS_RqStat "Adaptive Cruise Control Axle Torque Command Status : Request Status";
+BA_ "SignalLongName" SG_ 452 RdLdNomAxlTrq "Road Load Nominal Axle Torque";
+BA_ "SignalLongName" SG_ 452 AccPdlOvrrdAtvProtVal "Accelerator Pedal Override Active Protection Value";
+BA_ "SignalLongName" SG_ 452 AccPdlOvrrdAtvARC "Accelerator Pedal Override Active Alive Rolling Count";
+BA_ "SignalLongName" SG_ 452 AccPdlOvrrdAtv "Accelerator Pedal Override Active";
+BA_ "SignalType" SG_ 452 CPSATCS_ReqStatus "ENM";
+BA_ "SignalLongName" SG_ 452 CPSATCS_ReqStatus "Collision Preparation System Axle Torque Command Status : Request Status";
+BA_ "SignalType" SG_ 452 CPSATCS_LmtngStatus "ENM";
+BA_ "SignalLongName" SG_ 452 CPSATCS_LmtngStatus "Collision Preparation System Axle Torque Command Status : Limiting Status";
+BA_ "SignalType" SG_ 452 RVBATCS_ReqStat "ENM";
+BA_ "SignalLongName" SG_ 452 RVBATCS_ReqStat "Rear Virtual Bumper Axle Torque Command Status : Request Status";
+BA_ "SignalType" SG_ 452 RVBATCS_LmtngStat "ENM";
+BA_ "SignalLongName" SG_ 452 RVBATCS_LmtngStat "Rear Virtual Bumper Axle Torque Command Status : Limiting Status";
+BA_ "SignalLongName" SG_ 715 ACCATC_SplREngInpR "Adaptive Cruise Control Axle Torque Command : Special Re-engagement Input Required";
+BA_ "SignalType" SG_ 715 ACCATC_DrvAstdGoSt "ENM";
+BA_ "SignalLongName" SG_ 715 ACCATC_DrvAstdGoSt "Adaptive Cruise Control Axle Torque Command : Driver Assisted Go State";
+BA_ "SignalLongName" SG_ 715 ACCATC_AxlTrqRq "Adaptive Cruise Control Axle Torque Command : Axle Torque Request";
+BA_ "SignalType" SG_ 715 ACCATC_ACCTyp "ENM";
+BA_ "SignalLongName" SG_ 715 ACCATC_ACCTyp "Adaptive Cruise Control Axle Torque Command : Adaptive Cruise Control Type";
+BA_ "SignalLongName" SG_ 715 ACCATC_ACCAct "Adaptive Cruise Control Axle Torque Command : Adaptive Cruise Control Active";
+BA_ "SignalLongName" SG_ 715 ACCAxlTrqCmdProt "Adaptive Cruise Control Axle torque Command Protection";
+BA_ "SignalLongName" SG_ 715 ACCCmndAlvRlgCnt "Adaptive Cruise Control Command Alive Rolling Count";
+BA_ "SignalLongName" SG_ 481 CrsSecSwStatPVal "Cruise Secondary Switch Status Protection Value";
+BA_ "SignalLongName" SG_ 481 CrsSecSwStatARC "Cruise Secondary Switch Status Alive Rolling Count";
+BA_ "SignalType" SG_ 481 CrsSecSwStat "ENM";
+BA_ "SignalLongName" SG_ 481 CrsSecSwStat "Cruise Secondary Switch Status";
+BA_ "SignalType" SG_ 481 DrvSelMdSw3Sta "ENM";
+BA_ "SignalLongName" SG_ 481 DrvSelMdSw3Sta "Driver Selected Mode Switch 3 State";
+BA_ "SignalType" SG_ 481 DrvSelMdSw2Sta "ENM";
+BA_ "SignalLongName" SG_ 481 DrvSelMdSw2Sta "Driver Selected Mode Switch 2 State";
+BA_ "SignalLongName" SG_ 481 DrvSelMdSwStaARC "Driver Selected Mode Switch State Alive Rolling Count";
+BA_ "SignalType" SG_ 481 DrvSelMdSw1Sta "ENM";
+BA_ "SignalLongName" SG_ 481 DrvSelMdSw1Sta "Driver Selected Mode Switch 1 State";
+BA_ "SignalLongName" SG_ 481 CrsSpdLmtrSwStatPVal "Cruise and Speed Limiter Switch Status Protection Value";
+BA_ "SignalLongName" SG_ 481 CrsSpdLmtrSwStatARC "Cruise and Speed Limiter Switch Status Alive Rolling Count";
+BA_ "SignalType" SG_ 481 CrsSpdLmtrSwStat "ENM";
+BA_ "SignalLongName" SG_ 481 CrsSpdLmtrSwStat "Cruise and Speed Limiter Switch Status";
+BA_ "SignalLongName" SG_ 451 HillDscntCtrlSwStatPVal "Hill Descent Control Switch Status Protection Value";
+BA_ "SignalLongName" SG_ 451 HillDscntCtrlSwStatARC "Hill Descent Control Switch Status Alive Rolling Count";
+BA_ "SignalType" SG_ 451 HillDscntCtrlSwStat "ENM";
+BA_ "SignalLongName" SG_ 451 HillDscntCtrlSwStat "Hill Descent Control Switch Status";
+BA_ "SignalType" SG_ 451 GlwPlgCrnkDelAct "ENM";
+BA_ "SignalLongName" SG_ 451 GlwPlgCrnkDelAct "Glow Plugs Crank Delay Active";
+BA_ "SignalType" SG_ 451 AuxHtrAlwd "ENM";
+BA_ "SignalLongName" SG_ 451 AuxHtrAlwd "Auxiliary Heater Allowed";
+BA_ "SignalType" SG_ 451 AppCltchAutSrtIO "ENM";
+BA_ "SignalLongName" SG_ 451 AppCltchAutSrtIO "Apply Clutch For Automatic Start Indication On";
+BA_ "SignalType" SG_ 451 AccPosV "ENM";
+BA_ "SignalLongName" SG_ 451 AccPosV "Accelerator Effective Position Validity";
+BA_ "SignalLongName" SG_ 451 AccPos "Accelerator Effective Position";
+BA_ "SignalLongName" SG_ 451 FuelFltRmnLf "Fuel Filter Remaining Life";
+BA_ "SignalType" SG_ 451 EngTrqRdFlrSt "ENM";
+BA_ "SignalLongName" SG_ 451 EngTrqRdFlrSt "Engine Torque Reduction Failure Status";
+BA_ "SignalType" SG_ 451 EngTrqDrRqdExtRngV "ENM";
+BA_ "SignalLongName" SG_ 451 EngTrqDrRqdExtRngV "Engine Torque Driver Requested Extended Range Validity";
+BA_ "SignalLongName" SG_ 451 EngTrqDrRqdExtRng "Engine Torque Driver Requested Extended Range";
+BA_ "SignalType" SG_ 451 EngTrqActExtRngV "ENM";
+BA_ "SignalLongName" SG_ 451 EngTrqActExtRngV "Engine Torque Actual Extended Range Validity";
+BA_ "SignalLongName" SG_ 451 EngTrqActExtRng "Engine Torque Actual Extended Range";
+BA_ "SignalLongName" SG_ 451 CrsCntrlRsmSet "Cruise Control Resume Set";
+BA_ "SignalLongName" SG_ 451 CrsCntrlSetSpdRtnd "Cruise Control Set Speed Retained";
+BA_ "SignalLongName" SG_ 451 CrsCntrlSet "Cruise Control Set";
+BA_ "SignalLongName" SG_ 451 TrqAthdCrsCntrlAtv "Torque Authorized Cruise Control Active";
+BA_ "SignalType" SG_ 707 CSTATRS_ReqStat "ENM";
+BA_ "SignalLongName" SG_ 707 CSTATRS_ReqStat "Chassis System Total Axle Torque Request Status : Request Status";
+BA_ "SignalType" SG_ 707 CSTATRS_LmtgStat "ENM";
+BA_ "SignalLongName" SG_ 707 CSTATRS_LmtgStat "Chassis System Total Axle Torque Request Status : Limiting Status";
+BA_ "SignalType" SG_ 707 EngManfldAbsPrsV "ENM";
+BA_ "SignalLongName" SG_ 707 EngManfldAbsPrsV "Engine Manifold Absolute Pressure Validity";
+BA_ "SignalLongName" SG_ 707 EngManfldAbsPrs "Engine Manifold Absolute Pressure";
+BA_ "SignalType" SG_ 707 EngTrqMinExtRngV "ENM";
+BA_ "SignalLongName" SG_ 707 EngTrqMinExtRngV "Engine Torque Minimum Extended Range Validity";
+BA_ "SignalLongName" SG_ 707 EngTrqMinExtRng "Engine Torque Minimum Extended Range";
+BA_ "SignalType" SG_ 707 EngTrqMaxExtRngV "ENM";
+BA_ "SignalLongName" SG_ 707 EngTrqMaxExtRngV "Engine Torque Maximum Extended Range Validity";
+BA_ "SignalLongName" SG_ 707 EngTrqMaxExtRng "Engine Torque Maximum Extended Range";
+BA_ "SignalType" SG_ 707 TrqAthdCrsCntrlDsgRsn "ENM";
+BA_ "SignalLongName" SG_ 707 TrqAthdCrsCntrlDsgRsn "Torque Authorized Cruise Control Disengage Reason";
+BA_ "SignalType" SG_ 388 HndsOffStrWhlDtStV "ENM";
+BA_ "SignalLongName" SG_ 388 HndsOffStrWhlDtStV "Hands Off Steering Wheel Detection State Validity";
+BA_ "SignalType" SG_ 388 HndsOffStrWhlDtSt "ENM";
+BA_ "SignalLongName" SG_ 388 HndsOffStrWhlDtSt "Hands Off Steering Wheel Detection State";
+BA_ "SignalType" SG_ 388 HndsOffStrWhlDtMd "ENM";
+BA_ "SignalLongName" SG_ 388 HndsOffStrWhlDtMd "Hands Off Steering Wheel Detection Mode";
+BA_ "SignalLongName" SG_ 388 LKATrqOvrlStatChksm "Lane Keeping Assist Torque Overlay Status Checksum";
+BA_ "SignalLongName" SG_ 388 LKATrqOvrlDltTrqDlvd "Lane Keeping Assist Torque Overlay Delta Torque Delivered";
+BA_ "SignalLongName" SG_ 388 LKATrqOvrlDlvdRC "Lane Keeping Assist Torque Overlay Delivered Rolling Count";
+BA_ "SignalLongName" SG_ 388 LKAElPwrStTtlTqDlvd "Lane Keeping Assist Electrical Power Steering Total Torque Delivered";
+BA_ "SignalType" SG_ 388 LKATrqOvrlTrqDStat "ENM";
+BA_ "SignalLongName" SG_ 388 LKATrqOvrlTrqDStat "Lane Keeping Assist Torque Overlay Torque Delivered Status";
+BA_ "SignalType" SG_ 388 LKADrvAppldTrqV "ENM";
+BA_ "SignalLongName" SG_ 388 LKADrvAppldTrqV "Lane Keeping Assist Driver Applied Torque Validity";
+BA_ "SignalLongName" SG_ 388 LKADrvAppldTrq "Lane Keeping Assist Driver Applied Torque";
+BA_ "SignalType" SG_ 201 Eng12vStrtrMtrCmmdOn "ENM";
+BA_ "SignalLongName" SG_ 201 Eng12vStrtrMtrCmmdOn "Engine 12 Volt Starter Motor Commanded On";
+BA_ "SignalType" SG_ 201 EngCntrlRunCrnkTrmSt "ENM";
+BA_ "SignalLongName" SG_ 201 EngCntrlRunCrnkTrmSt "Engine Controller Run Crank Terminal Status";
+BA_ "SignalType" SG_ 201 EngAirIntBstPrV "ENM";
+BA_ "SignalLongName" SG_ 201 EngAirIntBstPrV "Engine Intake Air Boost Pressure Validity";
+BA_ "SignalLongName" SG_ 201 EngAirIntBstPr "Engine Intake Air Boost Pressure";
+BA_ "SignalType" SG_ 201 SpdLmtrSpdWrngEnbld "ENM";
+BA_ "SignalLongName" SG_ 201 SpdLmtrSpdWrngEnbld "Speed Limiter/Speed Warning Enabled";
+BA_ "SignalType" SG_ 201 EngCylDactEvntPndg "ENM";
+BA_ "SignalLongName" SG_ 201 EngCylDactEvntPndg "Engine Cylinder Deactivation Event Pending";
+BA_ "SignalType" SG_ 201 EngCylDeactMd "ENM";
+BA_ "SignalLongName" SG_ 201 EngCylDeactMd "Engine Cylinder Deactivation Mode";
+BA_ "SignalType" SG_ 201 RmVhStrtEngRng "ENM";
+BA_ "SignalLongName" SG_ 201 RmVhStrtEngRng "Remote Vehicle Start Engine Running";
+BA_ "SignalType" SG_ 201 PFEngSpdCmndSpcd "ENM";
+BA_ "SignalLongName" SG_ 201 PFEngSpdCmndSpcd "Platform Engine Speed Command Superceded";
+BA_ "SignalLongName" SG_ 201 DrThrtlOvrrdDetProtVal "Driver Throttle Override Detected Protection Value";
+BA_ "SignalLongName" SG_ 201 DrThrtlOvrdDetAlvRlCnt "Driver Throttle Override Detection Alive Rolling Count";
+BA_ "SignalType" SG_ 201 PltfrmEngSpdCmdInhtRq "ENM";
+BA_ "SignalLongName" SG_ 201 PltfrmEngSpdCmdInhtRq "Platform Engine Speed Command Inhibit Request";
+BA_ "SignalType" SG_ 201 PT_BrkPedDscrtInpStatV "ENM";
+BA_ "SignalLongName" SG_ 201 PT_BrkPedDscrtInpStatV "Powertrain Brake Pedal Discrete Input Status Validity";
+BA_ "SignalType" SG_ 201 PT_BrkPedDscrtInpStat "ENM";
+BA_ "SignalLongName" SG_ 201 PT_BrkPedDscrtInpStat "Powertrain Brake Pedal Discrete Input Status";
+BA_ "SignalLongName" SG_ 201 AccActPos "Accelerator Actual Position";
+BA_ "SignalType" SG_ 201 CrsCntEnbld "ENM";
+BA_ "SignalLongName" SG_ 201 CrsCntEnbld "Cruise Control Enabled";
+BA_ "SignalType" SG_ 201 CrsCntAtv "ENM";
+BA_ "SignalLongName" SG_ 201 CrsCntAtv "Cruise Control Active";
+BA_ "SignalType" SG_ 201 DrvThrottlOvrrdDet "ENM";
+BA_ "SignalLongName" SG_ 201 DrvThrottlOvrrdDet "Driver Throttle Override Detected";
+BA_ "SignalType" SG_ 201 PT_CrnkAct "ENM";
+BA_ "SignalLongName" SG_ 201 PT_CrnkAct "Powertrain Crank Active";
+BA_ "SignalType" SG_ 201 PTRunAbrt "ENM";
+BA_ "SignalLongName" SG_ 201 PTRunAbrt "Powertrain Run Aborted";
+BA_ "SignalType" SG_ 201 PTO_PT_RunAbrtd "ENM";
+BA_ "SignalLongName" SG_ 201 PTO_PT_RunAbrtd "Power Take Off Powertrain Run Aborted";
+BA_ "SignalType" SG_ 201 PTCrnkAbrted "ENM";
+BA_ "SignalLongName" SG_ 201 PTCrnkAbrted "Powertrain Crank Aborted";
+BA_ "SignalType" SG_ 201 EngSpdStat "ENM";
+BA_ "SignalLongName" SG_ 201 EngSpdStat "Engine Speed Status";
+BA_ "SignalLongName" SG_ 201 EngSpd "Engine Speed";
+BA_ "SignalType" SG_ 201 EngRunAtv "ENM";
+BA_ "SignalLongName" SG_ 201 EngRunAtv "Engine Run Active";
+BA_ "SignalType" SG_ 201 EngIdlAtv "ENM";
+BA_ "SignalLongName" SG_ 201 EngIdlAtv "Engine Idle Active";
+BA_ "SignalType" SG_ 201 AccActPosV "ENM";
+BA_ "SignalLongName" SG_ 201 AccActPosV "Accelerator Actual Position Validity";
+BA_ "SignalType" SG_ 1001 DistRollCntAvgDrvnSrc "ENM";
+BA_ "SignalLongName" SG_ 1001 DistRollCntAvgDrvnSrc "Distance Rolling Count Average Driven Source";
+BA_ "SignalType" SG_ 1001 VehSpdAvgDrvnSrc "ENM";
+BA_ "SignalLongName" SG_ 1001 VehSpdAvgDrvnSrc "Vehicle Speed Average Driven Source";
+BA_ "SignalType" SG_ 1001 DstRolCntAvgNonDrvnV "ENM";
+BA_ "SignalLongName" SG_ 1001 DstRolCntAvgNonDrvnV "Distance Rolling Count Average Non Driven Validity";
+BA_ "SignalType" SG_ 1001 DstRolCntAvNDrRstOc "ENM";
+BA_ "SignalLongName" SG_ 1001 DstRolCntAvNDrRstOc "Distance Rolling Count Average Non Driven Reset Occurred";
+BA_ "SignalLongName" SG_ 1001 DstRolCntAvgNonDrvn "Distance Rolling Count Average Non Driven";
+BA_ "SignalType" SG_ 1001 DistRollCntAvgDrvnV "ENM";
+BA_ "SignalLongName" SG_ 1001 DistRollCntAvgDrvnV "Distance Rolling Count Average Driven Validity";
+BA_ "SignalType" SG_ 1001 DstRolCntAvgDrnRstOc "ENM";
+BA_ "SignalLongName" SG_ 1001 DstRolCntAvgDrnRstOc "Distance Rolling Count Average Driven Reset Occurred";
+BA_ "SignalLongName" SG_ 1001 DistRollCntAvgDrvn "Distance Rolling Count Average Driven";
+BA_ "SignalType" SG_ 1001 VehSpdAvgNDrvnV "ENM";
+BA_ "SignalLongName" SG_ 1001 VehSpdAvgNDrvnV "Vehicle Speed Average Non Driven Validity";
+BA_ "SignalLongName" SG_ 1001 VehSpdAvgNDrvn "Vehicle Speed Average Non Driven";
+BA_ "SignalType" SG_ 1001 VehSpdAvgDrvnV "ENM";
+BA_ "SignalLongName" SG_ 1001 VehSpdAvgDrvnV "Vehicle Speed Average Driven Validity";
+BA_ "SignalLongName" SG_ 1001 VehSpdAvgDrvn "Vehicle Speed Average Driven";
+BA_ "SignalType" SG_ 298 DrvrDrAjrSwVDA "ENM";
+BA_ "SignalLongName" SG_ 298 DrvrDrAjrSwVDA "Driver Door Ajar Switch Virtual Device Availability";
+BA_ "SignalType" SG_ 298 ValetMdAct "ENM";
+BA_ "SignalLongName" SG_ 298 ValetMdAct "Valet Mode Active";
+BA_ "SignalLongName" SG_ 298 TCSysDisSwAtvARC "Traction Control System Disable Switch Active Alive Rolling Count";
+BA_ "SignalType" SG_ 298 TCSysDisSwAtv_12A "ENM";
+BA_ "SignalLongName" SG_ 298 TCSysDisSwAtv_12A "Traction Control System Disable Switch Active";
+BA_ "SignalType" SG_ 298 ChmAct "ENM";
+BA_ "SignalLongName" SG_ 298 ChmAct "Chime Active";
+BA_ "SignalType" SG_ 298 Ky_IdDevPr "ENM";
+BA_ "SignalLongName" SG_ 298 Ky_IdDevPr "Key / Identification Device Present";
+BA_ "SignalType" SG_ 298 CrshAlrtDrvrSlctdType "ENM";
+BA_ "SignalLongName" SG_ 298 CrshAlrtDrvrSlctdType "Crash Alert Driver Selected Type";
+BA_ "SignalType" SG_ 298 DrSbltAtcV "ENM";
+BA_ "SignalLongName" SG_ 298 DrSbltAtcV "Driver Seatbelt Attached Validity";
+BA_ "SignalType" SG_ 298 DrSbltAtc "ENM";
+BA_ "SignalLongName" SG_ 298 DrSbltAtc "Driver Seatbelt Attached";
+BA_ "SignalType" SG_ 298 PsSbltAtcV "ENM";
+BA_ "SignalLongName" SG_ 298 PsSbltAtcV "Passenger Seatbelt Attached Validity";
+BA_ "SignalType" SG_ 298 PsSbltAtc "ENM";
+BA_ "SignalLongName" SG_ 298 PsSbltAtc "Passenger Seatbelt Attached";
+BA_ "SignalType" SG_ 298 DDAjrSwAtvM "ENM";
+BA_ "SignalLongName" SG_ 298 DDAjrSwAtvM "Driver Door Ajar Switch Active Mask";
+BA_ "SignalType" SG_ 298 DDAjrSwAtv "ENM";
+BA_ "SignalLongName" SG_ 298 DDAjrSwAtv "Driver Door Ajar Switch Active";
+BA_ "SignalType" SG_ 298 PDAjrSwAtv "ENM";
+BA_ "SignalLongName" SG_ 298 PDAjrSwAtv "Passenger Door Ajar Switch Active";
+BA_ "SignalType" SG_ 298 RLDoorAjarSwAct "ENM";
+BA_ "SignalLongName" SG_ 298 RLDoorAjarSwAct "Rear Left Door Ajar Switch Active";
+BA_ "SignalType" SG_ 298 RRDoorAjarSwAct "ENM";
+BA_ "SignalLongName" SG_ 298 RRDoorAjarSwAct "Rear Right Door Ajar Switch Active";
+BA_ "SignalType" SG_ 298 ChmMstrVDA "ENM";
+BA_ "SignalLongName" SG_ 298 ChmMstrVDA "Chime Master Virtual Device Availability";
+BA_ "SignalType" SG_ 298 IPCVDA "ENM";
+BA_ "SignalLongName" SG_ 298 IPCVDA "Instrument Panel Cluster Virtual Device Availability";
+BA_ "SignalType" SG_ 298 HeadUpDispVDA "ENM";
+BA_ "SignalLongName" SG_ 298 HeadUpDispVDA "Head Up Display Virtual Device Availability";
+BA_ "SignalType" SG_ 298 HapticSeatVDA "ENM";
+BA_ "SignalLongName" SG_ 298 HapticSeatVDA "Haptic Seat Virtual Device Availability";
+BA_ "SignalType" SG_ 298 DrId "ENM";
+BA_ "SignalLongName" SG_ 298 DrId "Driver Identifier";
+BA_ "SignalType" SG_ 298 HUDActv "ENM";
+BA_ "SignalLongName" SG_ 298 HUDActv "Head Up Display Active";
+BA_ "SignalType" SG_ 298 BatVltV "ENM";
+BA_ "SignalLongName" SG_ 298 BatVltV "Battery Voltage Validity";
+BA_ "SignalLongName" SG_ 298 BatVlt "Battery Voltage";
+BA_ "SignalType" SG_ 241 NotEventStat "ENM";
+BA_ "SignalLongName" SG_ 241 NotEventStat "Notification Event Status";
+BA_ "SignalLongName" SG_ 241 BrkPdlChkData "Brake Pedal Check Data";
+BA_ "SignalType" SG_ 241 BrkAppSnsrHmPosLrnd "ENM";
+BA_ "SignalLongName" SG_ 241 BrkAppSnsrHmPosLrnd "Brake Apply Sensor Home Position Learned";
+BA_ "SignalType" SG_ 241 BrkPedTrvlAchvd "ENM";
+BA_ "SignalLongName" SG_ 241 BrkPedTrvlAchvd "Brake Pedal Initial Travel Achieved Status : Brake Pedal Initial Travel Achieved";
+BA_ "SignalType" SG_ 241 BrkPedTrvlAchvdV "ENM";
+BA_ "SignalLongName" SG_ 241 BrkPedTrvlAchvdV "Brake Pedal Initial Travel Achieved Status : Brake Pedal Initial Travel Achieved Validity";
+BA_ "SignalLongName" SG_ 241 BrkPdlPosGrad "Brake Pedal Position Gradient";
+BA_ "SignalLongName" SG_ 241 BrkPdlPos "Brake Pedal Position";
+BA_ "SignalLongName" SG_ 241 BrkPedPosAlvRolngCnt "Brake Pedal Position Alive Rolling Count";
+BA_ "SignalType" SG_ 241 BrkPdlModTrvlV "ENM";
+BA_ "SignalLongName" SG_ 241 BrkPdlModTrvlV "Brake Pedal Moderate Travel Achieved Validity";
+BA_ "SignalType" SG_ 241 BrkPdlModTrvl "ENM";
+BA_ "SignalLongName" SG_ 241 BrkPdlModTrvl "Brake Pedal Moderate Travel Achieved";
+BA_ "SignalLongName" SG_ 241 BrkPdlInTrvPrt "Brake Pedal Initial Travel Achieved Protection";
+BA_ "SignalType" SG_ 387 ElecPwrStrAngRtLmtCalSet "ENM";
+BA_ "SignalLongName" SG_ 387 ElecPwrStrAngRtLmtCalSet "Electrical Power Steering Angle Rate Limiting Cal Set";
+BA_ "SignalLongName" SG_ 387 ElcPwrStrAngAuthStatPVal "Electrical Power Steering Angle Authorization Status Protection Value";
+BA_ "SignalLongName" SG_ 387 ElcPwrStrAngAuthStatARC "Electrical Power Steering Angle Authorization Status Alive Rolling Count";
+BA_ "SignalType" SG_ 387 ElcPwrStrAngAuthStat "ENM";
+BA_ "SignalLongName" SG_ 387 ElcPwrStrAngAuthStat "Electrical Power Steering Angle Authorization Status";
+BA_ "SignalType" SG_ 840 WhlRotDrctnlStLftDrvn "ENM";
+BA_ "SignalLongName" SG_ 840 WhlRotDrctnlStLftDrvn "Wheel Rotational Directional Status Left Driven";
+BA_ "SignalType" SG_ 840 WhlRotDrctnlStRtDrvn "ENM";
+BA_ "SignalLongName" SG_ 840 WhlRotDrctnlStRtDrvn "Wheel Rotational Directional Status Right Driven";
+BA_ "SignalType" SG_ 840 WhlGrndVlctyRtDrvnV "ENM";
+BA_ "SignalLongName" SG_ 840 WhlGrndVlctyRtDrvnV "Wheel Ground Velocity Right Driven Validity";
+BA_ "SignalLongName" SG_ 840 WhlGrndVlctyRtDrvn "Wheel Ground Velocity Right Driven";
+BA_ "SignalType" SG_ 840 WhlGrndVlctyLftDrvnV "ENM";
+BA_ "SignalLongName" SG_ 840 WhlGrndVlctyLftDrvnV "Wheel Ground Velocity Left Driven Validity";
+BA_ "SignalLongName" SG_ 840 WhlGrndVlctyLftDrvn "Wheel Ground Velocity Left Driven";
+BA_ "SignalType" SG_ 842 WhlRotDrctnlSRtNDrvn "ENM";
+BA_ "SignalLongName" SG_ 842 WhlRotDrctnlSRtNDrvn "Wheel Rotational Directional Status Right Non Driven";
+BA_ "SignalType" SG_ 842 WhlRotDrctnlStLfNDrvn "ENM";
+BA_ "SignalLongName" SG_ 842 WhlRotDrctnlStLfNDrvn "Wheel Rotational Directional Status Left Non Driven";
+BA_ "SignalType" SG_ 842 WhlGrndVlctyRtNnDrvnV "ENM";
+BA_ "SignalLongName" SG_ 842 WhlGrndVlctyRtNnDrvnV "Wheel Ground Velocity Right Non Driven Validity";
+BA_ "SignalLongName" SG_ 842 WhlGrndVlctyRtNnDrvn "Wheel Ground Velocity Right Non Driven";
+BA_ "SignalType" SG_ 842 WhlGrndVlctyLftNnDrvnV "ENM";
+BA_ "SignalLongName" SG_ 842 WhlGrndVlctyLftNnDrvnV "Wheel Ground Velocity Left Non Driven Validity";
+BA_ "SignalLongName" SG_ 842 WhlGrndVlctyLftNnDrvn "Wheel Ground Velocity Left Non Driven";
+BA_ "SignalType" SG_ 489 EnhDrvMdSwChUseRq "ENM";
+BA_ "SignalLongName" SG_ 489 EnhDrvMdSwChUseRq "Enhanced Driver Selected Mode Switch Chassis Use Requested";
+BA_ "SignalType" SG_ 489 IMUDataMsk "ENM";
+BA_ "SignalLongName" SG_ 489 IMUDataMsk "Inertial Measurement Unit Data Mask";
+BA_ "SignalType" SG_ 489 DrvIndpntBrkAppAct "ENM";
+BA_ "SignalLongName" SG_ 489 DrvIndpntBrkAppAct "Driver Independent Brake Apply Active";
+BA_ "SignalType" SG_ 489 WhlSlpSt "ENM";
+BA_ "SignalLongName" SG_ 489 WhlSlpSt "Wheel Slip Status";
+BA_ "SignalType" SG_ 489 BSTGRReqdGear "ENM";
+BA_ "SignalLongName" SG_ 489 BSTGRReqdGear "Brake System Transmission Gear Request : Requested Gear";
+BA_ "SignalType" SG_ 489 BSTGRReqType "ENM";
+BA_ "SignalLongName" SG_ 489 BSTGRReqType "Brake System Transmission Gear Request : Request Type";
+BA_ "SignalType" SG_ 489 VSEAct "ENM";
+BA_ "SignalLongName" SG_ 489 VSEAct "Vehicle Stability Enhancement System Active";
+BA_ "SignalType" SG_ 489 VhDynCntlSysSt "ENM";
+BA_ "SignalLongName" SG_ 489 VhDynCntlSysSt "Vehicle Dynamics Control System Status";
+BA_ "SignalType" SG_ 489 TrnsBrkSysCltchRelRqd "ENM";
+BA_ "SignalLongName" SG_ 489 TrnsBrkSysCltchRelRqd "Transmission Brake System Clutch Release Requested";
+BA_ "SignalType" SG_ 489 TracCntrlSysDrIntnt "ENM";
+BA_ "SignalLongName" SG_ 489 TracCntrlSysDrIntnt "Traction Control System Driver Intent";
+BA_ "SignalType" SG_ 489 VehDynOvrUndrStrV "ENM";
+BA_ "SignalLongName" SG_ 489 VehDynOvrUndrStrV "Vehicle Dynamics Over Under Steer Validity";
+BA_ "SignalType" SG_ 489 TCSysEnbld "ENM";
+BA_ "SignalLongName" SG_ 489 TCSysEnbld "Traction Control System Enabled";
+BA_ "SignalType" SG_ 489 TCSysAtv "ENM";
+BA_ "SignalLongName" SG_ 489 TCSysAtv "Traction Control System Active";
+BA_ "SignalType" SG_ 489 BrkPdlDrvAppPrsDetcdV "ENM";
+BA_ "SignalLongName" SG_ 489 BrkPdlDrvAppPrsDetcdV "Brake Pedal Driver Applied Pressure Detected Validity";
+BA_ "SignalType" SG_ 489 BrkPdlDrvAppPrsDetcd "ENM";
+BA_ "SignalLongName" SG_ 489 BrkPdlDrvAppPrsDetcd "Brake Pedal Driver Applied Pressure Detected";
+BA_ "SignalType" SG_ 489 ACCBrkngAct "ENM";
+BA_ "SignalLongName" SG_ 489 ACCBrkngAct "Adaptive Cruise Control Braking Active";
+BA_ "SignalType" SG_ 489 ABSFld "ENM";
+BA_ "SignalLongName" SG_ 489 ABSFld "Antilock Brake System Failed";
+BA_ "SignalType" SG_ 489 ABSAtv "ENM";
+BA_ "SignalLongName" SG_ 489 ABSAtv "Antilock Brake System Active";
+VAL_ 560 ElecPrkBrkSwStatV 1 "Invalid" 0 "Valid" ;
+VAL_ 560 ElecPrkBrkSwStat 3 "Active" 2 "Apply" 1 "Release" 0 "NotActive" ;
+VAL_ 560 AllNodesVNA 1 "Activate Virtual Network" 0 "No Activation" ;
+VAL_ 560 StpOnBrkToRelPBIndOn 1 "true" 0 "false" ;
+VAL_ 560 EPBC_EPBrkAutBrkRq 1 "true" 0 "false" ;
+VAL_ 560 EPBSysDspMsgReq 7 "Message #7" 6 "Message #6" 5 "Message #5" 4 "Message #4" 3 "Message #3" 2 "Message #2" 1 "Message #1" 0 "Off" ;
+VAL_ 560 EPBSysAudWarnReq 2 "Warning #2" 1 "Warning #1" 0 "Off" ;
+VAL_ 560 ElecPrkBrkStat 2 "Fault" 1 "Applied" 0 "Released" ;
+VAL_ 560 EPBCrsCanRq 1 "true" 0 "false" ;
+VAL_ 560 EPBSysStatIndReq 3 "Flash Rate 2 Indication" 2 "Flash Rate 1 Indication" 1 "Continuous Indication" 0 "No Indication" ;
+VAL_ 560 EPBSysWrnIndReq 3 "Flash Rate #2 Indication" 2 "Flash Rate #1 Indication" 1 "Continuous Indication" 0 "No Indication" ;
+VAL_ 560 EPBSysBrkLtsReq 1 "true" 0 "false" ;
+VAL_ 532 RedntVSEAct 1 "true" 0 "false" ;
+VAL_ 532 HilRlbkCtrlActIO 1 "true" 0 "false" ;
+VAL_ 532 VehHldDrvrDsblActvFlg 1 "true" 0 "false" ;
+VAL_ 532 AutoBrkngAvlbl 1 "true" 0 "false" ;
+VAL_ 532 ABSAutnmsBrkReq 1 "true" 0 "false" ;
+VAL_ 532 HlStrAssActIO 1 "true" 0 "false" ;
+VAL_ 532 ABSActvProt 1 "true" 0 "false" ;
+VAL_ 532 BrkSysAutBrkFld 1 "true" 0 "false" ;
+VAL_ 532 IntBrkAssPreFilReq 1 "true" 0 "false" ;
+VAL_ 532 BrkSysMalFuncIndOn 1 "true" 0 "false" ;
+VAL_ 532 BPDAPS_BkPDrvApPV 1 "Invalid" 0 "Valid" ;
+VAL_ 532 BrkFldLvlLwV 1 "Invalid" 0 "Valid" ;
+VAL_ 532 AutoBrkngAct 1 "true" 0 "false" ;
+VAL_ 532 BrkFldLvlLw 1 "true" 0 "false" ;
+VAL_ 398 EngNTrnsRegStdyStTqV 1 "Invalid" 0 "Valid" ;
+VAL_ 398 AccKdwnAtv 1 "true" 0 "false" ;
+VAL_ 398 EngActStdyStTorqV 1 "Invalid" 0 "Valid" ;
+VAL_ 398 TrnsEngSpdReqFld 1 "true" 0 "false" ;
+VAL_ 398 PTACCAct 1 "true" 0 "false" ;
+VAL_ 398 CTSS_StbltyLvl 7 "Level 7" 6 "Level 6" 5 "Level 5" 4 "Level 4" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "Level 0" ;
+VAL_ 398 CTSS_StbltyTyp 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Torque Increase Pending" 2 "Torque Decrease Pending" 1 "Torque High Pulsation" 0 "Normal Stability" ;
+VAL_ 398 EngImmTrqTnsRqStat 0 "No Request" 7 "Unused and Reserved" 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" ;
+VAL_ 398 EngImmTrqTnsRqLmSt 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Value Limited High" 2 "Value Limited Low" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_ 398 EngPrdctTrqTnsRqStat 7 "Unused and Reserved" 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_ 398 EngPrdctTrqTnsRqLmS 7 "Unused and Reserved 4" 6 "Unused and Reserved 3" 5 "Unused and Reserved 2" 4 "Unused and Reserved 1" 3 "Value Limited High" 2 "Value Limited Low" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_ 197 WRSLNDWhlRotStRst 1 "true" 0 "false" ;
+VAL_ 197 WRSLNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 197 WRSRNDWhlRotStRst 1 "true" 0 "false" ;
+VAL_ 197 WRSRNDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 193 WRSLDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 193 WRSLDWhlRotStatRst 1 "true" 0 "false" ;
+VAL_ 193 WRSRDWhlRotStatRst 1 "true" 0 "false" ;
+VAL_ 193 WRSRDWhlDistVal 1 "Invalid" 0 "Valid" ;
+VAL_ 170 EngCommFlrRedPwrCm 1 "true" 0 "false" ;
+VAL_ 170 CmndAxlTrqRespTyp 0 "Inactive" 1 "Pleasability Limit" 2 "Maximum Range" 3 "Automatic Actuator Selection" ;
+VAL_ 190 OPDFetrActRqt 2 "Request Unavailable" 1 "Requested On" 0 "Requested Off" ;
+VAL_ 190 TrnsAuxPmpAct 1 "true" 0 "false" ;
+VAL_ 190 PSBPI_PTSnBrkPdlPsV 1 "Invalid" 0 "Valid" ;
+VAL_ 485 StrWhAngGrdV 1 "Invalid" 0 "Valid" ;
+VAL_ 485 StrWhAngGrdMsk 0 "Don't Use Data" 1 "Use Data" ;
+VAL_ 485 StrWhAngMsk 0 "Don't Use Data" 1 "Use Data" ;
+VAL_ 485 StrWhlAngSenTyp 0 "Type 1" 1 "Type 2" 2 "Type 3" 3 "Type 4" ;
+VAL_ 485 StrWhlAngSenCalStat 2 "Calibrated" 1 "Estimated" 0 "Unknown" ;
+VAL_ 485 StrWhAngV 1 "Invalid" 0 "Valid" ;
+VAL_ 320 PrkngLtsAct 1 "true" 0 "false" ;
+VAL_ 320 PrkLtRightOn 1 "true" 0 "false" ;
+VAL_ 320 PrkLtLeftOn 1 "true" 0 "false" ;
+VAL_ 320 HazSwAtv 1 "true" 0 "false" ;
+VAL_ 320 DRLAct 1 "true" 0 "false" ;
+VAL_ 320 Ky_IdDevPrgmAuthReq 1 "true" 0 "false" ;
+VAL_ 320 ClmnLckStatV 1 "Invalid" 0 "Valid" ;
+VAL_ 320 ClmnLckStat 2 "Locked unsuccessful" 1 "Unlocked" 0 "Locked" 3 "Unlocked unsuccessful" ;
+VAL_ 320 AutoBmSlctAllwd 1 "true" 0 "false" ;
+VAL_ 320 BrkLtsAtv 1 "true" 0 "false" ;
+VAL_ 320 TrnSwAct 2 "Right" 1 "Left" 0 "No Activation" ;
+VAL_ 320 RrFogLmpsAct 1 "true" 0 "false" ;
+VAL_ 320 OtsdAmbtLtLvlStatV 1 "Invalid" 0 "Valid" ;
+VAL_ 320 OtsdAmbtLtLvlStat 2 "Day" 1 "Night" 0 "Unknown" ;
+VAL_ 320 MainLghtSw 3 "HEADLAMP" 2 "PARKLAMP" 1 "OFF" 0 "AUTO" ;
+VAL_ 320 LowBmAct 1 "true" 0 "false" ;
+VAL_ 320 HighBmAct 1 "true" 0 "false" ;
+VAL_ 320 HdlmpBmSelectStat 2 "High Beams" 1 "Low Beams" 0 "Unknown" ;
+VAL_ 320 FlToPsSwAtv 1 "true" 0 "false" ;
+VAL_ 320 AdvFrntLghtSysEnbld 1 "true" 0 "false" ;
+VAL_ 320 FrFogLmpsAct 1 "true" 0 "false" ;
+VAL_ 320 AutLghtCtrl 1 "true" 0 "false" ;
+VAL_ 453 DrvIntndAxlTrqV 1 "Invalid" 0 "Valid" ;
+VAL_ 453 DrvIntndAxlTrqMinV 1 "Invalid" 0 "Valid" ;
+VAL_ 453 DrvIntndAxlTrqMaxV 1 "Invalid" 0 "Valid" ;
+VAL_ 211 ActAxleTrqV 1 "Invalid" 0 "Valid" ;
+VAL_ 452 ABAAPS_AccPosV 1 "Invalid" 0 "Valid" ;
+VAL_ 452 ACCATCS_LmtgStat 3 "Request Rate Limited" 2 "Request Value Limited Maximum" 1 "Request Value Limited Minimum" 0 "Request Not Limited" ;
+VAL_ 452 ACCATCS_RqStat 4 "Request Suspended Till Driver Input" 3 "Request Denied" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_ 452 CPSATCS_ReqStatus 0 "No Request" 1 "Request Honored" 2 "Lost Arbitration" 3 "Serial Data Failure Temporary" 4 "Serial Data Failure Permanent" 5 "Control System Failure Temporary" 6 "Control System Failure Permanent" ;
+VAL_ 452 CPSATCS_LmtngStatus 0 "Request Not Limited" 1 "Request Value Limited to Minimum" 2 "Request Value Limited to Maximum" 3 "Request Rate Limited" ;
+VAL_ 452 RVBATCS_ReqStat 0 "No Request" 1 "Request Honored" 2 "Lost Arbitration" 3 "Serial Data Failure Temporary" 4 "Serial Data Failure Permanent" 5 "Control System Failure Temporary" 6 "Control System Failure Permanent" ;
+VAL_ 452 RVBATCS_LmtngStat 0 "Request Not Limited" 1 "Request Value Limited to Minimum" 2 "Request Value Limited to Maximum" 3 "Request Rate Limited" ;
+VAL_ 715 ACCATC_DrvAstdGoSt 3 "Auto Resume Pending" 2 "Apply Acc Pedal or Resume Sw To Go" 1 "Apply Accel Pedal to Go" 0 "Not Stopped" ;
+VAL_ 715 ACCATC_ACCTyp 3 "Full Speed Range ACC with LCC" 2 "Full Speed Range ACC with Booster" 1 "Full Speed Range ACC" 0 "Adaptive Cruise Control" ;
+VAL_ 481 CrsSecSwStat 15 "Unused and Reserved 5" 14 "Unused and Reserved 4" 13 "Unused and Reserved 3" 12 "Unused and Reserved 2" 11 "Unused and Reserved 1" 10 "Lane Centering Control" 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Speed Decrease High" 5 "Speed Increase High" 4 "Gap Up" 3 "Gap Down" 2 "Lane Keep Assist" 1 "No Activation" 0 "Indeterminate" ;
+VAL_ 481 DrvSelMdSw3Sta 1 "Active" 0 "Inactive" ;
+VAL_ 481 DrvSelMdSw2Sta 1 "Active" 0 "Inactive" ;
+VAL_ 481 DrvSelMdSw1Sta 1 "Active" 0 "Inactive" ;
+VAL_ 481 CrsSpdLmtrSwStat 9 "Between Ranges" 8 "Short to Power" 7 "Open/Short to Ground" 6 "Cancel" 5 "Cruise On/Off" 4 "SL/SW On/Off/GAP" 3 "Set" 2 "Resume" 1 "No Activation" 0 "Indeterminate" ;
+VAL_ 451 HillDscntCtrlSwStat 0 "No Activation" 1 "Increment" 2 "Decrement" 3 "Faulted" ;
+VAL_ 451 GlwPlgCrnkDelAct 1 "true" 0 "false" ;
+VAL_ 451 AuxHtrAlwd 1 "true" 0 "false" ;
+VAL_ 451 AppCltchAutSrtIO 1 "true" 0 "false" ;
+VAL_ 451 AccPosV 1 "Invalid" 0 "Valid" ;
+VAL_ 451 EngTrqRdFlrSt 4 "Torq Reduction Communication Failed" 3 "Torque Reduction Limited" 2 "Torque Reduction Permanently Failed" 1 "Torque Reduction Temporarily Failed" 0 "Torque Reduction OK" ;
+VAL_ 451 EngTrqDrRqdExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_ 451 EngTrqActExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_ 707 CSTATRS_ReqStat 6 "Control System Failure Permanent" 5 "Control System Failure Temporary" 4 "Serial Data Failure Permanent" 3 "Serial Data Failure Temporary" 2 "Lost Arbitration" 1 "Request Honored" 0 "No Request" ;
+VAL_ 707 CSTATRS_LmtgStat 3 "Rate and Value Limited" 2 "Value Limited" 1 "Rate Limited" 0 "Not Limited" ;
+VAL_ 707 EngManfldAbsPrsV 1 "Invalid" 0 "Valid" ;
+VAL_ 707 EngTrqMinExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_ 707 EngTrqMaxExtRngV 1 "Invalid" 0 "Valid" ;
+VAL_ 707 TrqAthdCrsCntrlDsgRsn 36 "SerialDataFault" 35 "Sequence" 34 "DrivenWhlSpdGreater" 33 "UndrivenWhlSpdGreater" 32 "HighIgnVoltage" 31 "AnalogCruzOOR" 30 "MPH_LimitedFuelEst" 29 "ManlNeutCruz" 28 "LowIgnVoltage" 27 "PedGreaterThanCruz" 26 "FirstGearDsbl" 25 "InjectorDsbld" 24 "Malf" 23 "EngSpd" 17 "RsmAccelSwTogether" 16 "PCM_Inhibit" 15 "OverSpeedTapDown" 14 "OverSpeed" 13 "SwOff" 12 "None" 11 "LowSpeed" 10 "IllegalCruzMode" 9 "HighSpeed" 8 "HighDecel" 7 "HighAccel" 6 "ETC" 5 "CoastInhibit" 4 "CoastDisengage" 3 "Clutch" 2 "Cancel" 1 "BrakeBeforeCruz" 0 "Brake" 74 "HybTorqSigTO" 73 "LCC_SerialDataFault" 72 "ACC_InvalidEngage" 71 "ACC_Off" 70 "ACC_Brake" 69 "ACC_Cancel" 68 "ACC_RedEngPwr" 67 "VSESFaulted" 66 "TCSFaulted" 65 "ABS" 64 "VSESOff" 63 "TCSOff" 62 "HybridCruiseDisengage" 61 "HillDescentSerDatInhb" 60 "HillDescentActive" 59 "AutoBrkSerialDataFlt" 58 "AutoBrkFailed" 57 "NotUsed" 56 "SLSW_SwitchOn" 55 "BrkPdlDrvrAplyPressDet" 54 "ManlGrChngWithoutClch" 53 "4WD_LowDisable" 52 "RateLimError" 51 "BrkAplySnsrHomeNotLrnd" 50 "ProcIntegFault" 49 "RunningReset" 48 "PTO" 47 "ACC_CmdSerialDataError" 46 "CntrlSysTypeError" 45 "ACC_AutoBrkFailed" 44 "ACC_Inhibited" 43 "ParkBrakeActive" 42 "BrakeApplyInvalid" 41 "BrakeSerDatError" 40 "TransGrDfltd" 39 "RearAxleLow" 38 "VehStabilityActive" 37 "MetalOvertempActive" 22 "EngRunTime" 21 "BadMemory" 20 "ALDL" 19 "UnderSchedule" 18 "TCS" ;
+VAL_ 388 HndsOffStrWhlDtStV 1 "Invalid" 0 "Valid" ;
+VAL_ 388 HndsOffStrWhlDtSt 0 "Hands Off" 1 "Hands On" ;
+VAL_ 388 HndsOffStrWhlDtMd 0 "Disabled" 1 "Enabled" 2 "Failed" ;
+VAL_ 388 LKATrqOvrlTrqDStat 0 "Inactive" 1 "Active" 2 "Temporarily Limited" 3 "Permanently Failed" ;
+VAL_ 388 LKADrvAppldTrqV 1 "Invalid" 0 "Valid" ;
+VAL_ 201 Eng12vStrtrMtrCmmdOn 1 "true" 0 "false" ;
+VAL_ 201 EngCntrlRunCrnkTrmSt 1 "Active" 0 "Inactive" ;
+VAL_ 201 EngAirIntBstPrV 1 "Invalid" 0 "Valid" ;
+VAL_ 201 SpdLmtrSpdWrngEnbld 1 "true" 0 "false" ;
+VAL_ 201 EngCylDactEvntPndg 1 "true" 0 "false" ;
+VAL_ 201 EngCylDeactMd 3 "Reactivation In Progress" 2 "Half of Total Cylinders Active" 1 "Deactivation In Progress" 0 "All Cylinders Active" ;
+VAL_ 201 RmVhStrtEngRng 1 "true" 0 "false" ;
+VAL_ 201 PFEngSpdCmndSpcd 1 "true" 0 "false" ;
+VAL_ 201 PltfrmEngSpdCmdInhtRq 1 "Inhibit Platform Eng. Speed Control" 0 "Allow Platform Engine Speed Control" ;
+VAL_ 201 PT_BrkPedDscrtInpStatV 1 "Invalid" 0 "Valid" ;
+VAL_ 201 PT_BrkPedDscrtInpStat 1 "Brake Applied" 0 "Brake Not Applied" ;
+VAL_ 201 CrsCntEnbld 1 "true" 0 "false" ;
+VAL_ 201 CrsCntAtv 1 "true" 0 "false" ;
+VAL_ 201 DrvThrottlOvrrdDet 1 "true" 0 "false" ;
+VAL_ 201 PT_CrnkAct 1 "true" 0 "false" ;
+VAL_ 201 PTRunAbrt 1 "true" 0 "false" ;
+VAL_ 201 PTO_PT_RunAbrtd 1 "true" 0 "false" ;
+VAL_ 201 PTCrnkAbrted 1 "true" 0 "false" ;
+VAL_ 201 EngSpdStat 3 "Invalid" 1 "Degraded Operation" 0 "Normal Operation" ;
+VAL_ 201 EngRunAtv 1 "true" 0 "false" ;
+VAL_ 201 EngIdlAtv 1 "true" 0 "false" ;
+VAL_ 201 AccActPosV 1 "Invalid" 0 "Valid" ;
+VAL_ 1001 DistRollCntAvgDrvnSrc 1 "Wheel Speed" 0 "Transmission Output Speed" ;
+VAL_ 1001 VehSpdAvgDrvnSrc 1 "Wheel Speed" 0 "Transmission Output Speed" ;
+VAL_ 1001 DstRolCntAvgNonDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 1001 DstRolCntAvNDrRstOc 1 "true" 0 "false" ;
+VAL_ 1001 DistRollCntAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 1001 DstRolCntAvgDrnRstOc 1 "true" 0 "false" ;
+VAL_ 1001 VehSpdAvgNDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 1001 VehSpdAvgDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 298 DrvrDrAjrSwVDA 1 "Virtual Device Available" 0 "Virtual Device Unavailable" ;
+VAL_ 298 ValetMdAct 1 "true" 0 "false" ;
+VAL_ 298 TCSysDisSwAtv_12A 1 "true" 0 "false" ;
+VAL_ 298 ChmAct 1 "true" 0 "false" ;
+VAL_ 298 Ky_IdDevPr 1 "true" 0 "false" ;
+VAL_ 298 CrshAlrtDrvrSlctdType 0 "Chime" 1 "Seat" ;
+VAL_ 298 DrSbltAtcV 1 "Invalid" 0 "Valid" ;
+VAL_ 298 DrSbltAtc 1 "true" 0 "false" ;
+VAL_ 298 PsSbltAtcV 1 "Invalid" 0 "Valid" ;
+VAL_ 298 PsSbltAtc 1 "true" 0 "false" ;
+VAL_ 298 DDAjrSwAtvM 0 "Don't Use Data" 1 "Use Data" ;
+VAL_ 298 DDAjrSwAtv 1 "true" 0 "false" ;
+VAL_ 298 PDAjrSwAtv 1 "true" 0 "false" ;
+VAL_ 298 RLDoorAjarSwAct 1 "true" 0 "false" ;
+VAL_ 298 RRDoorAjarSwAct 1 "true" 0 "false" ;
+VAL_ 298 ChmMstrVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_ 298 IPCVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_ 298 HeadUpDispVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_ 298 HapticSeatVDA 1 "VirtualDeviceAvailable" 0 "VirtualDeviceUnavailable" ;
+VAL_ 298 DrId 7 "Unknown" 6 "Driver #7" 5 "Driver #6" 4 "Driver #5" 3 "Driver #4" 2 "Driver #3" 1 "Driver #2" 0 "Driver #1" ;
+VAL_ 298 HUDActv 1 "true" 0 "false" ;
+VAL_ 298 BatVltV 1 "Invalid" 0 "Valid" ;
+VAL_ 241 NotEventStat 2 "Pretensioner Deployment Event" 1 "Near Deployment Event" 0 "No Event" 3 "Airbag Deployment Event" ;
+VAL_ 241 BrkAppSnsrHmPosLrnd 1 "true" 0 "false" ;
+VAL_ 241 BrkPedTrvlAchvd 1 "true" 0 "false" ;
+VAL_ 241 BrkPedTrvlAchvdV 1 "Invalid" 0 "Valid" ;
+VAL_ 241 BrkPdlModTrvlV 1 "Invalid" 0 "Valid" ;
+VAL_ 241 BrkPdlModTrvl 1 "true" 0 "false" ;
+VAL_ 387 ElecPwrStrAngRtLmtCalSet 3 "Safety Command" 2 "Cal Set 3" 1 "Cal Set 2" 0 "Cal Set 1" ;
+VAL_ 387 ElcPwrStrAngAuthStat 7 "Unknown" 5 "Ramp Down" 4 "Limited Active" 3 "Permanently Failed" 2 "Active" 1 "Available for Control" 0 "Temp Inhibit" ;
+VAL_ 840 WhlRotDrctnlStLftDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_ 840 WhlRotDrctnlStRtDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_ 840 WhlGrndVlctyRtDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 840 WhlGrndVlctyLftDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 842 WhlRotDrctnlSRtNDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_ 842 WhlRotDrctnlStLfNDrvn 0 "Unknown" 1 "Forward" 2 "Reverse" 3 "Not Supported" 4 "Failed" 5 "Reserved 1" 6 "Reserved 2" 7 "Reserved 3" ;
+VAL_ 842 WhlGrndVlctyRtNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 842 WhlGrndVlctyLftNnDrvnV 1 "Invalid" 0 "Valid" ;
+VAL_ 489 EnhDrvMdSwChUseRq 1 "true" 0 "false" ;
+VAL_ 489 IMUDataMsk 1 "true" 0 "false" ;
+VAL_ 489 DrvIndpntBrkAppAct 1 "true" 0 "false" ;
+VAL_ 489 WhlSlpSt 3 "Slip Detection Fault" 2 "Positive Slip Detected" 1 "Negative Slip Detected" 0 "No Slip Detected" ;
+VAL_ 489 BSTGRReqdGear 10 "Tenth Gear" 9 "Ninth Gear" 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Action" ;
+VAL_ 489 BSTGRReqType 3 "Hold Gear" 2 "Min Gear Request" 1 "Max Gear Request" 0 "No Action" ;
+VAL_ 489 VSEAct 1 "true" 0 "false" ;
+VAL_ 489 VhDynCntlSysSt 7 "Driver Disabled" 6 "Enhanced Operation" 5 "Calibrating" 4 "Warming Up" 3 "Permanently Failed" 2 "Temporarily Inhibited" 1 "Reduced Function" 0 "Normal Operation" ;
+VAL_ 489 TrnsBrkSysCltchRelRqd 1 "true" 0 "false" ;
+VAL_ 489 TracCntrlSysDrIntnt 1 "Enabled" 0 "Disabled" ;
+VAL_ 489 VehDynOvrUndrStrV 1 "Invalid" 0 "Valid" ;
+VAL_ 489 TCSysEnbld 1 "true" 0 "false" ;
+VAL_ 489 TCSysAtv 1 "true" 0 "false" ;
+VAL_ 489 BrkPdlDrvAppPrsDetcdV 1 "Invalid" 0 "Valid" ;
+VAL_ 489 BrkPdlDrvAppPrsDetcd 1 "true" 0 "false" ;
+VAL_ 489 ACCBrkngAct 1 "true" 0 "false" ;
+VAL_ 489 ABSFld 1 "true" 0 "false" ;
+VAL_ 489 ABSAtv 1 "true" 0 "false" ;
+

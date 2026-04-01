@@ -1,0 +1,371 @@
+VERSION ""
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+
+BS_:
+
+BU_: 
+VAL_TABLE_ AVLightStatus 1 "Off" 2 "On" 3 "Flashing" ;
+VAL_TABLE_ AVLightColor 1 "Blue" 2 "Red" 3 "Green" 4 "White" 5 "Amber" 0 "Off" ;
+VAL_TABLE_ GlobalAutonomyStatus 0 "Fault" 1 "Inactive" 2 "Active" ;
+VAL_TABLE_ SteeringCtrlActive 1 "true" 0 "false" ;
+VAL_TABLE_ FrictionBrakeCtrlActive 1 "true" 0 "false" ;
+VAL_TABLE_ PropulsionCtrlActive 1 "true" 0 "false" ;
+VAL_TABLE_ LLnDistanceValid 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ RLnDistanceValid 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ ObjObjectType 7 "Automatic Gate / Railroad" 4 "pedestrian" 3 "motocycle  / bicycle" 2 "Large vehicle (semi)" 1 "4 Wheel Vehicle (car, small trk)" 0 "Unknown" 5 "fixed object / barricade" 6 "animal" ;
+VAL_TABLE_ Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_TABLE_ Relative_Lane 0 "Unknown" 1 "Host Lane" 3 "Left Shoulder" 4 "Left Lane" 5 "Right Lane" 6 "Right Shoulder" 7 "Overhead" 2 "Opposing Lane" 8 "Off Road" 9 "Rightbound Cross Traffic Lane" 10 "Leftbound Cross Traffic Lane" ;
+VAL_TABLE_ Object_Source_Camera 1 "true" 0 "false" ;
+VAL_TABLE_ Object_Source_Radar 1 "true" 0 "false" ;
+VAL_TABLE_ Object_Source_Ultrasonic 1 "true" 0 "false" ;
+VAL_TABLE_ Object_Source_V2X 1 "true" 0 "false" ;
+VAL_TABLE_ Object_Source_Lidar 1 "true" 0 "false" ;
+VAL_TABLE_ Object_Source_Other 1 "true" 0 "false" ;
+VAL_TABLE_ DynProp 4 "Moving in opposite direction" 3 "Moving in same direction as host" 2 "Has moved but currently stopped" 1 "Has never moved" 0 "Unknown" ;
+VAL_TABLE_ Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_TABLE_ Signal_Head_Type 0 "Unknown" 1 "Other" 2 "2-Light" 3 "3-Light" 4 "4-Light" 5 "5-Light" ;
+VAL_TABLE_ Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_TABLE_ Sign_Type 0 "Unknown" 1 "Speed Limit (MPH)" 2 "Speed Limit (KPH)" 3 "Stop" 4 "Yield" 5 "No Left Turn" 6 "No Right Turn" 7 "Do Not Enter" 8 "Left Turn Only" 9 "Right Turn Only" 10 "Railroad Crossing" 11 "Crosswalk" 12 "No Turn On Red" 13 "No U-Turn" 14 "One Way (Left)" 15 "One Way (Right)" 16 "No Parking" 17 "Handicap Parking" ;
+VAL_TABLE_ LaneMarkingLnHdngTngtV 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ LaneMarkingLnDstV 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ LaneMarkingLnCrvtV 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ LaneMarkingLnCrvtGradV 1 "Valid" 0 "Invalid" ;
+VAL_TABLE_ LaneMarkingLnMrkrTyp 0 "None" 1 "Solid" 2 "Dashed" 3 "Dotted" 4 "Botts Dots" 5 "Double" 6 "Road Edge" ;
+VAL_TABLE_ LaneMarkingColor 0 "Unknown" 1 "White" 2 "Yellow" 3 "Other" ;
+VAL_TABLE_ Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_TABLE_ Relative_Lane 0 "Unknown" 1 "Host Lane" 3 "Left Shoulder" 4 "Left Lane" 5 "Right Lane" 6 "Right Shoulder" 7 "Overhead" ;
+VAL_TABLE_ MovementEventState 0 "unavailable" 1 "dark" 2 "stop-Then-Proceed" 3 "stop-And-Remain" 4 "pre-Movement" 5 "permissive-Movement-Allowed" 6 "protected-Movement-Allowed" 7 "permissive-clearance" 8 "protected-clearance" 9 "caution-Conflicting-Traffic" ;
+
+
+BO_ 16 AVLight: 1 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC,BlueLight_SC
+ SG_ AVLightStatus : 5|2@0+ (1,0) [0|3] "" DAQ_SC,BlueLight_SC
+ SG_ AVLightColor : 3|3@0+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 17 AVState: 1 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC,BlueLight_SC
+ SG_ GlobalAutonomyStatus : 5|2@0+ (1,0) [0|2] "" DAQ_SC,BlueLight_SC
+ SG_ SteeringCtrlActive : 3|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ FrictionBrakeCtrlActive : 2|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ PropulsionCtrlActive : 1|1@0+ (1,0) [0|1] "" DAQ_SC
+
+BO_ 18 RoadState: 8 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Active_Traffic_Signal_Head_ID : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Current_Observed_Speed_Limit : 15|8@0+ (1,0) [0|255] "" DAQ_SC
+ SG_ Next_Observed_Speed_Limit : 23|8@0+ (1,0) [0|255] "" DAQ_SC
+ SG_ Next_Observed_Speed_Limit_Longit : 31|8@0+ (1,0) [0|255] "" DAQ_SC
+ SG_ Active_Lane_Number : 39|4@0+ (1,0) [0|15] "" DAQ_SC
+ SG_ Left_Lane_Marking_ID : 47|4@0+ (1,0) [1|15] "" DAQ_SC
+ SG_ Right_Lane_Marking_ID : 43|4@0+ (1,0) [1|15] "" DAQ_SC
+ SG_ LLnDistanceValid : 55|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ DistToLLnEdge : 54|7@0+ (0.05,0) [0|6.35] "m" DAQ_SC
+ SG_ RLnDistanceValid : 63|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ DistToRLnEdge : 62|7@0+ (0.05,0) [0|6.35] "m" DAQ_SC
+
+BO_ 19 VehicleOrientation: 7 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ VehicleHeading : 15|16@0+ (0.01,0) [0|359.99] "deg" Vector__XXX
+ SG_ VehicleRoll : 31|16@0- (0.01,0) [-90|90] "" Vector__XXX
+ SG_ VehiclePitch : 47|16@0- (0.01,0) [-90|90] "" Vector__XXX
+
+BO_ 20 VehicleLocation: 8 Vector__XXX
+ SG_ VehicleLatitude : 7|32@0- (1e-07,0) [-90|90] "deg" DAQ_SC
+ SG_ VehicleLongitude : 39|32@0- (1e-07,0) [-180|180] "deg" DAQ_SC
+
+BO_ 32 Objects: 3 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Current_Object_Count : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Observation_Time_of_Hour : 15|16@0+ (0.1,0) [0|3599.9] "seconds" DAQ_SC
+
+BO_ 33 Object_TrackA: 8 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ ObjObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ ObjObjectType : 15|4@0+ (1,0) [0|7] "" DAQ_SC
+ SG_ LongPos : 11|12@0- (0.125,0) [-256|255.875] "m" DAQ_SC
+ SG_ LatPos : 31|11@0- (0.125,0) [-128|127.875] "m" DAQ_SC
+ SG_ RelLongVel : 36|11@0- (0.125,0) [-128|127.875] "m/s" DAQ_SC
+ SG_ RelLatVel : 41|11@0- (0.125,0) [-128|127.875] "m/s" DAQ_SC
+ SG_ Confidence : 62|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Relative_Lane : 60|5@0+ (1,0) [0|10] "" DAQ_SC
+
+BO_ 34 Object_TrackB: 5 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ ObjObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ Width : 13|3@0+ (0.5,0) [0|3.5] "m" DAQ_SC
+ SG_ Height : 10|3@0+ (0.5,0) [0|3.5] "m" DAQ_SC
+ SG_ Object_Relative_Orientation : 23|8@0+ (1.41,0) [0|359.55] "deg" Vector__XXX
+ SG_ RelLnPosition : 39|8@0- (0.1,0) [-12.8|12.7] "m" DAQ_SC
+ SG_ Object_Source_Camera : 29|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ Object_Source_Radar : 28|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ Object_Source_Ultrasonic : 27|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ Object_Source_V2X : 26|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ Object_Source_Lidar : 25|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ Object_Source_Other : 24|1@0+ (1,0) [0|1] "" DAQ_SC
+
+BO_ 35 Object_TrackC: 8 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ ObjObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ Object_Latitude : 15|32@0- (1e-07,0) [-90|90] "deg" DAQ_SC
+ SG_ Object_Absolute_Velocity : 47|8@0+ (0.25,0) [0|63.75] "m/s" Vector__XXX
+ SG_ Object_Course : 55|8@0+ (1.41,0) [0|359.55] "deg" Vector__XXX
+ SG_ DynProp : 58|3@0+ (1,0) [0|4] "" DAQ_SC
+
+BO_ 36 Object_TrackD: 5 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ ObjObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ Object_Longitude : 15|32@0- (1e-07,0) [-180|180] "deg" DAQ_SC
+
+BO_ 48 TrafficSignalHeads: 3 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Current_Signal_Head_Count : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Observation_Time_of_Hour : 15|16@0+ (0.1,0) [0|3599.9] "seconds" DAQ_SC
+
+BO_ 49 TrafficSignalHead_TrackA: 7 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ SignalObjectID : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Height_Above_Ground : 15|4@0+ (1,0) [0|15] "m" DAQ_SC
+ SG_ LongPos : 11|12@0- (0.125,0) [-256|255.875] "m" DAQ_SC
+ SG_ LatPos : 31|11@0- (0.125,0) [-128|127.875] "m" DAQ_SC
+ SG_ Confidence : 36|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Signal_Head_Type : 34|3@0+ (1,0) [0|5] "" DAQ_SC
+ SG_ IllumLtNone : 47|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtRedBall : 46|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtYellowBall : 45|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtGreenBall : 44|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngRedBall : 43|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngYellowBall : 42|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtRedLeftArrow : 41|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtYellowLeftArrow : 40|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtGreenLeftArrow : 55|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngRedLeftArrow : 54|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngYellowLeftArrow : 53|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtRedRightArrow : 52|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtYellowRightArrow : 51|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtGreenRightArrow : 50|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngRedRightArrow : 49|1@0+ (1,0) [0|0] "" DAQ_SC
+ SG_ IllumLtFlshngYellowRightArrow : 48|1@0+ (1,0) [0|0] "" DAQ_SC
+
+BO_ 64 TrafficSigns: 3 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Current_Sign_Count : 5|6@0+ (1,0) [0|15] "" DAQ_SC
+ SG_ Observation_Time_of_Hour : 15|16@0+ (0.1,0) [0|3599.9] "seconds" DAQ_SC
+
+BO_ 65 TrafficSign_TrackA: 7 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ SignObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ Confidence : 15|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ LongPos : 11|12@0- (0.125,0) [-256|255.875] "m" DAQ_SC
+ SG_ Height_Above_Ground : 31|5@0+ (1,0) [0|31] "m" DAQ_SC
+ SG_ LatPos : 26|11@0- (0.125,0) [-128|127.875] "m" DAQ_SC
+ SG_ Sign_Type : 47|8@0+ (1,0) [0|17] "" DAQ_SC
+ SG_ Sign_Value : 55|8@0+ (1,0) [0|255] "" DAQ_SC
+
+BO_ 80 LaneMarkings: 3 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ CurrentLaneMarkingCount : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Observation_Time_of_Hour : 15|16@0+ (0.1,0) [0|3599.9] "seconds" DAQ_SC
+
+BO_ 81 LaneMarking_TrackA: 8 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ LaneMarkingID : 5|4@0+ (1,0) [1|15] "" DAQ_SC
+ SG_ LaneMarkingLnHdngTngtV : 1|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ LaneMarkingLnHdngTngt : 23|8@0- (0.002,0) [-0.256|0.254] "m/m" DAQ_SC
+ SG_ LaneMarkingLnDstV : 0|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ LaneMarkingLnDst : 15|8@0- (0.1,0) [-12.8|12.7] "m" DAQ_SC
+ SG_ LaneMarkingLnCrvtV : 49|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ LaneMarkingLnCrvtGradV : 48|1@0+ (1,0) [0|1] "" DAQ_SC
+ SG_ LaneMarkingLnCrvtGrad : 32|15@0- (5.96e-08,0) [-0.0009764864|0.0009764268] "1/(m*sec)" DAQ_SC
+ SG_ LaneMarkingLnCrvt : 31|15@0- (9.53e-07,0) [-0.015613952|0.015612999] "1/m" DAQ_SC
+ SG_ LaneMarkingLnQltyConfLvl : 58|3@0+ (0.787402,0) [0|5.5118112] "%" DAQ_SC
+ SG_ LaneMarkingLnMrkrTyp : 61|3@0+ (1,0) [0|6] "" DAQ_SC
+ SG_ LaneMarkingColor : 63|2@0+ (1,0) [0|3] "" DAQ_SC
+
+BO_ 96 LimitLines: 3 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Current_Limit_Line_Count : 5|6@0+ (1,0) [0|63] "" DAQ_SC
+ SG_ Observation_Time_of_Hour : 15|16@0+ (0.1,0) [0|3599.9] "seconds" DAQ_SC
+
+BO_ 97 LimitLine_TrackA: 6 Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ LineObjectID : 5|6@0+ (1,0) [1|63] "" DAQ_SC
+ SG_ Confidence : 15|2@0+ (1,0) [0|3] "" DAQ_SC
+ SG_ Longitudinal_Length : 13|5@0+ (0.1,0) [0|3.1] "m" DAQ_SC
+ SG_ Width : 8|5@0+ (0.5,0) [0|15.5] "m" DAQ_SC
+ SG_ LongPos : 19|12@0- (0.125,0) [-256|255.875] "m" DAQ_SC
+ SG_ LatPos : 39|11@0- (0.125,0) [-128|127.875] "m" DAQ_SC
+ SG_ Relative_Lane : 44|4@0+ (1,0) [0|7] "" DAQ_SC
+
+BO_ 113 V2XIntersection_MAP: 6 Vector__XXX
+ SG_ IntersectionID : 4|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ IngressLaneID : 20|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ PlannedEgressLaneID : 31|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ PlannedManeuver : 26|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SignalGroup : 46|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MAP_Validity : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 114 V2XIntersection_SPAT: 8 Vector__XXX
+ SG_ IntersectionID : 4|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SignalGroup : 20|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SPAT_Timestamp : 31|17@0+ (1,0) [0|86400] "seconds since midnight UTC" Vector__XXX
+ SG_ SecondsUntilChangeMinimum : 46|9@0+ (1,0) [0|511] "seconds" Vector__XXX
+ SG_ SecondsUntilChangeMaximum : 53|9@0+ (1,0) [0|511] "seconds" Vector__XXX
+ SG_ MovementEventState : 60|4@0+ (1,0) [0|9] "" Vector__XXX
+ SG_ Rolling_Count : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SPAT_Validity : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+
+
+BA_DEF_ SG_  "SignalType" STRING ;
+BA_DEF_ SG_  "SignalLongName" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepetition","cyclicIfActiveAndSpontanWD";
+BA_DEF_DEF_  "SignalType" "";
+BA_DEF_DEF_  "SignalLongName" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclicX";
+BA_ "GenMsgCycleTime" BO_ 16 100;
+BA_ "GenMsgCycleTime" BO_ 17 100;
+BA_ "GenMsgCycleTime" BO_ 18 100;
+BA_ "GenMsgCycleTime" BO_ 19 100;
+BA_ "GenMsgCycleTime" BO_ 20 100;
+BA_ "GenMsgCycleTime" BO_ 32 100;
+BA_ "GenMsgCycleTime" BO_ 48 100;
+BA_ "GenMsgCycleTime" BO_ 64 100;
+BA_ "GenMsgCycleTime" BO_ 80 100;
+BA_ "GenMsgCycleTime" BO_ 96 100;
+BA_ "GenMsgCycleTime" BO_ 113 100;
+BA_ "GenMsgCycleTime" BO_ 114 100;
+BA_ "SignalType" SG_ 16 AVLightStatus "ENM";
+BA_ "SignalType" SG_ 16 AVLightColor "ENM";
+BA_ "SignalType" SG_ 17 GlobalAutonomyStatus "ENM";
+BA_ "SignalType" SG_ 17 SteeringCtrlActive "ENM";
+BA_ "SignalType" SG_ 17 FrictionBrakeCtrlActive "ENM";
+BA_ "SignalType" SG_ 17 PropulsionCtrlActive "ENM";
+BA_ "SignalType" SG_ 18 LLnDistanceValid "ENM";
+BA_ "SignalLongName" SG_ 18 LLnDistanceValid "Distance to Left Lane Edge Valid";
+BA_ "SignalLongName" SG_ 18 DistToLLnEdge "Distance to Left Lane Edge";
+BA_ "SignalType" SG_ 18 RLnDistanceValid "ENM";
+BA_ "SignalLongName" SG_ 18 RLnDistanceValid "Distance to Right Lane Edge Valid";
+BA_ "SignalLongName" SG_ 18 DistToRLnEdge "Distance to Right Lane Edge";
+BA_ "SignalLongName" SG_ 33 ObjObjectID "Object ID";
+BA_ "SignalType" SG_ 33 ObjObjectType "ENM";
+BA_ "SignalLongName" SG_ 33 ObjObjectType "Object Type";
+BA_ "SignalLongName" SG_ 33 LongPos "Object Relative Longitudinal Position";
+BA_ "SignalLongName" SG_ 33 LatPos "Object Relative Lateral Position";
+BA_ "SignalLongName" SG_ 33 RelLongVel "Object Relative Longitudinal Velocity";
+BA_ "SignalLongName" SG_ 33 RelLatVel "Object Relative Lateral Velocity";
+BA_ "SignalType" SG_ 33 Confidence "ENM";
+BA_ "SignalLongName" SG_ 33 Confidence "Object Confidence";
+BA_ "SignalType" SG_ 33 Relative_Lane "ENM";
+BA_ "SignalLongName" SG_ 34 ObjObjectID "Object ID";
+BA_ "SignalLongName" SG_ 34 Width "Object Width";
+BA_ "SignalLongName" SG_ 34 Height "Object Height";
+BA_ "SignalLongName" SG_ 34 RelLnPosition "Object Position in Object Lane";
+BA_ "SignalType" SG_ 34 Object_Source_Camera "ENM";
+BA_ "SignalLongName" SG_ 34 Object_Source_Camera "Object Source Camera";
+BA_ "SignalType" SG_ 34 Object_Source_Radar "ENM";
+BA_ "SignalLongName" SG_ 34 Object_Source_Radar "Object Source Radar";
+BA_ "SignalType" SG_ 34 Object_Source_Ultrasonic "ENM";
+BA_ "SignalType" SG_ 34 Object_Source_V2X "ENM";
+BA_ "SignalType" SG_ 34 Object_Source_Lidar "ENM";
+BA_ "SignalLongName" SG_ 34 Object_Source_Lidar "Object Source Lidar";
+BA_ "SignalType" SG_ 34 Object_Source_Other "ENM";
+BA_ "SignalLongName" SG_ 34 Object_Source_Other "Object Source Other";
+BA_ "SignalLongName" SG_ 35 ObjObjectID "Object ID";
+BA_ "SignalType" SG_ 35 DynProp "ENM";
+BA_ "SignalLongName" SG_ 35 DynProp "Dynamic Property";
+BA_ "SignalLongName" SG_ 36 ObjObjectID "Object ID";
+BA_ "SignalLongName" SG_ 49 SignalObjectID "Signal Head ID";
+BA_ "SignalLongName" SG_ 49 LongPos "Longitudinal Position";
+BA_ "SignalLongName" SG_ 49 LatPos "Lateral Position";
+BA_ "SignalType" SG_ 49 Confidence "ENM";
+BA_ "SignalType" SG_ 49 Signal_Head_Type "ENM";
+BA_ "SignalLongName" SG_ 65 SignObjectID "Sign ID";
+BA_ "SignalType" SG_ 65 Confidence "ENM";
+BA_ "SignalLongName" SG_ 65 LongPos "Longitudinal Position";
+BA_ "SignalLongName" SG_ 65 LatPos "Lateral Position";
+BA_ "SignalType" SG_ 65 Sign_Type "ENM";
+BA_ "SignalType" SG_ 81 LaneMarkingLnHdngTngtV "ENM";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnHdngTngtV "Lane Marking Lane Heading Tangent Validity";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnHdngTngt "Lane Marking Lane Heading Tangent";
+BA_ "SignalType" SG_ 81 LaneMarkingLnDstV "ENM";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnDstV "Lane Marking Lane Distance Validity";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnDst "Lane Marking Lane Distance";
+BA_ "SignalType" SG_ 81 LaneMarkingLnCrvtV "ENM";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnCrvtV "Lane Marking Lane Curvature Validity";
+BA_ "SignalType" SG_ 81 LaneMarkingLnCrvtGradV "ENM";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnCrvtGradV "Lane Marking Lane Curvature Gradient Validity";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnCrvtGrad "Lane Marking Lane Curvature Gradient";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnCrvt "Lane Marking Lane Curvature";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnQltyConfLvl "Lane Marking Lane Quality Confidence Level";
+BA_ "SignalType" SG_ 81 LaneMarkingLnMrkrTyp "ENM";
+BA_ "SignalLongName" SG_ 81 LaneMarkingLnMrkrTyp "Lane Marking Lane Marker Type";
+BA_ "SignalType" SG_ 81 LaneMarkingColor "ENM";
+BA_ "SignalLongName" SG_ 97 LineObjectID "Limit Line ID";
+BA_ "SignalType" SG_ 97 Confidence "ENM";
+BA_ "SignalLongName" SG_ 97 Width "Lateral Width";
+BA_ "SignalLongName" SG_ 97 LongPos "LeadingEdge_Longitudinal Position";
+BA_ "SignalLongName" SG_ 97 LatPos "Lateral Position";
+BA_ "SignalType" SG_ 97 Relative_Lane "ENM";
+BA_ "SignalType" SG_ 114 MovementEventState "ENM";
+VAL_ 16 AVLightStatus 1 "Off" 2 "On" 3 "Flashing" ;
+VAL_ 16 AVLightColor 1 "Blue" 2 "Red" 3 "Green" 4 "White" 5 "Amber" 0 "Off" ;
+VAL_ 17 GlobalAutonomyStatus 0 "Fault" 1 "Inactive" 2 "Active" ;
+VAL_ 17 SteeringCtrlActive 1 "true" 0 "false" ;
+VAL_ 17 FrictionBrakeCtrlActive 1 "true" 0 "false" ;
+VAL_ 17 PropulsionCtrlActive 1 "true" 0 "false" ;
+VAL_ 18 LLnDistanceValid 1 "Valid" 0 "Invalid" ;
+VAL_ 18 RLnDistanceValid 1 "Valid" 0 "Invalid" ;
+VAL_ 33 ObjObjectType 7 "Automatic Gate / Railroad" 4 "pedestrian" 3 "motocycle  / bicycle" 2 "Large vehicle (semi)" 1 "4 Wheel Vehicle (car, small trk)" 0 "Unknown" 5 "fixed object / barricade" 6 "animal" ;
+VAL_ 33 Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_ 33 Relative_Lane 0 "Unknown" 1 "Host Lane" 3 "Left Shoulder" 4 "Left Lane" 5 "Right Lane" 6 "Right Shoulder" 7 "Overhead" 2 "Opposing Lane" 8 "Off Road" 9 "Rightbound Cross Traffic Lane" 10 "Leftbound Cross Traffic Lane" ;
+VAL_ 34 Object_Source_Camera 1 "true" 0 "false" ;
+VAL_ 34 Object_Source_Radar 1 "true" 0 "false" ;
+VAL_ 34 Object_Source_Ultrasonic 1 "true" 0 "false" ;
+VAL_ 34 Object_Source_V2X 1 "true" 0 "false" ;
+VAL_ 34 Object_Source_Lidar 1 "true" 0 "false" ;
+VAL_ 34 Object_Source_Other 1 "true" 0 "false" ;
+VAL_ 35 DynProp 4 "Moving in opposite direction" 3 "Moving in same direction as host" 2 "Has moved but currently stopped" 1 "Has never moved" 0 "Unknown" ;
+VAL_ 49 Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_ 49 Signal_Head_Type 0 "Unknown" 1 "Other" 2 "2-Light" 3 "3-Light" 4 "4-Light" 5 "5-Light" ;
+VAL_ 65 Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_ 65 Sign_Type 0 "Unknown" 1 "Speed Limit (MPH)" 2 "Speed Limit (KPH)" 3 "Stop" 4 "Yield" 5 "No Left Turn" 6 "No Right Turn" 7 "Do Not Enter" 8 "Left Turn Only" 9 "Right Turn Only" 10 "Railroad Crossing" 11 "Crosswalk" 12 "No Turn On Red" 13 "No U-Turn" 14 "One Way (Left)" 15 "One Way (Right)" 16 "No Parking" 17 "Handicap Parking" ;
+VAL_ 81 LaneMarkingLnHdngTngtV 1 "Valid" 0 "Invalid" ;
+VAL_ 81 LaneMarkingLnDstV 1 "Valid" 0 "Invalid" ;
+VAL_ 81 LaneMarkingLnCrvtV 1 "Valid" 0 "Invalid" ;
+VAL_ 81 LaneMarkingLnCrvtGradV 1 "Valid" 0 "Invalid" ;
+VAL_ 81 LaneMarkingLnMrkrTyp 0 "None" 1 "Solid" 2 "Dashed" 3 "Dotted" 4 "Botts Dots" 5 "Double" 6 "Road Edge" ;
+VAL_ 81 LaneMarkingColor 0 "Unknown" 1 "White" 2 "Yellow" 3 "Other" ;
+VAL_ 97 Confidence 3 "confident" 2 "speculative" 1 "highly speculative" 0 "invalid" ;
+VAL_ 97 Relative_Lane 0 "Unknown" 1 "Host Lane" 3 "Left Shoulder" 4 "Left Lane" 5 "Right Lane" 6 "Right Shoulder" 7 "Overhead" ;
+VAL_ 114 MovementEventState 0 "unavailable" 1 "dark" 2 "stop-Then-Proceed" 3 "stop-And-Remain" 4 "pre-Movement" 5 "permissive-Movement-Allowed" 6 "protected-Movement-Allowed" 7 "permissive-clearance" 8 "protected-clearance" 9 "caution-Conflicting-Traffic" ;
+
