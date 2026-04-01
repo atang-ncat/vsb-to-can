@@ -8,7 +8,7 @@ The two Jupyter notebooks below constitute the team's written report and can be 
 
 | Notebook | Purpose |
 |----------|---------|
-| `NCAT_CAN_Analysis.ipynb` | Perception analysis of the scored run CAN logs (object detection, traffic signals, traffic signs, autonomy state, GPS track, and score estimation) |
+| `NCAT_Perception_Analysis.ipynb` | Perception analysis of the scored run CAN logs (object detection, traffic signals, traffic signs, autonomy state, GPS track, and score estimation) |
 | `NCAT_GNSS_Attenuation_Analysis.ipynb` | GNSS attenuation testing writeup (how attenuation was achieved, observed effects, and mitigation strategies) |
 
 ## Note on the GNSS Attenuation Analysis
@@ -42,7 +42,7 @@ To execute the GNSS notebook, it must be run on the vehicle PC where the ROS bag
 
 | File | Description |
 |------|-------------|
-| `NCAT_CAN_Analysis.ipynb` | Full perception analysis of the scored run. Sections: data loading, GPS track visualization, autonomy engagement timeline, object detection analysis (types, confidence, sensor sources, bird's-eye view), traffic signal recognition (light states, state transitions), traffic sign recognition (detected types, confidence), perception quality summary, and score estimation. Pre-executed with all outputs and plots embedded. |
+| `NCAT_Perception_Analysis.ipynb` | Full perception analysis of the scored run. Sections: data loading, GPS track visualization, autonomy engagement timeline, object detection analysis (types, confidence, sensor sources, bird's-eye view), traffic signal recognition (light states, state transitions), traffic sign recognition (detected types, confidence), perception quality summary, and score estimation. Pre-executed with all outputs and plots embedded. |
 | `NCAT_GNSS_Attenuation_Analysis.ipynb` | GNSS attenuation writeup answering the three required questions: (1) how attenuation was achieved via a software-based attenuator cycling through drift, denial, recovery, multipath phases; (2) observed effects on position stdev, drift, and INS status; (3) mitigation via pose selector threshold, LIO fallback, smooth recovery blending, and multipath cross-checking. Must be executed on the vehicle PC with ROS and the bag file. |
 
 ### Scripts
@@ -55,7 +55,7 @@ To execute the GNSS notebook, it must be run on the vehicle PC where the ROS bag
 
 ### Generated Plots
 
-These plot images are produced by `NCAT_CAN_Analysis.ipynb` and are also embedded in the notebook outputs:
+These plot images are produced by `NCAT_Perception_Analysis.ipynb` and are also embedded in the notebook outputs:
 
 | File | Description |
 |------|-------------|
@@ -103,7 +103,7 @@ python3 analyze_can.py
 Run the CAN analysis notebook:
 
 ```
-jupyter notebook NCAT_CAN_Analysis.ipynb
+jupyter notebook NCAT_Perception_Analysis.ipynb
 ```
 
 ## License
